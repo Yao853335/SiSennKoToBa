@@ -1,0 +1,53 @@
+{
+  "label_studio_file": "label_studio.json",
+  "task_count": 600,
+  "span_count": 2332,
+  "splits": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "split_sizes": {
+    "train": 480,
+    "dev": 60,
+    "test": 60
+  },
+  "split_selection": {
+    "selected_seed": 42,
+    "seeds_searched": 1,
+    "test_field_task_coverage": {
+      "技能": 32,
+      "学历": 5,
+      "经验年限": 11,
+      "岗位名称": 8,
+      "语言能力": 2,
+      "知识领域": 30
+    },
+    "dev_field_task_coverage": {
+      "技能": 33,
+      "学历": 8,
+      "经验年限": 8,
+      "岗位名称": 9,
+      "语言能力": 1,
+      "知识领域": 27
+    }
+  },
+  "actual_test_field_task_coverage": {
+    "技能": 32,
+    "学历": 5,
+    "经验年限": 11,
+    "岗位名称": 8,
+    "语言能力": 2,
+    "知识领域": 30
+  },
+  "negative_ratio": 5,
+  "options": [
+    "技能",
+    "学历",
+    "经验年限",
+    "岗位名称",
+    "语言能力",
+    "知识领域"
+  ],
+  "converter": "D:\\SiSennKoToBa\\third_party\\PaddleNLP\\model_zoo\\uie\\doccano.py"
+}

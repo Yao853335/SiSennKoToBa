@@ -1,0 +1,223 @@
+D:\anaconda\envs\uie_gpu\lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+D:\anaconda\envs\uie_gpu\lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[33m[2026-10-31 10:48:10,872] [ WARNING][0m - evaluation_strategy reset to IntervalStrategy.STEPS for do_eval is True. you can also set evaluation_strategy='epoch'.[0m
+[32m[2026-10-31 10:48:10,872] [    INFO][0m - The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).[0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m - ============================================================[0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m -      Model Configuration Arguments      [0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m - paddle commit id              :8ce0de584c570589117e403322f3d1a0de6554e5[0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m - export_model_dir              :./checkpoint/uie_jd_v1[0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m - model_name_or_path            :./models/uie-base[0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m - multilingual                  :False[0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m - [0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m - ============================================================[0m
+[32m[2026-10-31 10:48:10,873] [    INFO][0m -       Data Configuration Arguments      [0m
+[32m[2026-10-31 10:48:10,874] [    INFO][0m - paddle commit id              :8ce0de584c570589117e403322f3d1a0de6554e5[0m
+[32m[2026-10-31 10:48:10,874] [    INFO][0m - dev_path                      :./data/dev.txt[0m
+[32m[2026-10-31 10:48:10,874] [    INFO][0m - dynamic_max_length            :None[0m
+[32m[2026-10-31 10:48:10,874] [    INFO][0m - max_seq_length                :512[0m
+[32m[2026-10-31 10:48:10,874] [    INFO][0m - train_path                    :./data/train.txt[0m
+[32m[2026-10-31 10:48:10,874] [    INFO][0m - [0m
+[33m[2026-10-31 10:48:10,874] [ WARNING][0m - Process rank: -1, device: gpu, world_size: 1, distributed training: False, 16-bits training: False[0m
+[32m[2026-10-31 10:48:10,876] [    INFO][0m - We are using <class 'paddlenlp.transformers.ernie.tokenizer.ErnieTokenizer'> to load './models/uie-base'.[0m
+[32m[2026-10-31 10:48:10,893] [    INFO][0m - Loading configuration file ./models/uie-base\config.json[0m
+[32m[2026-10-31 10:48:10,894] [    INFO][0m - Loading weights file ./models/uie-base\model_state.pdparams[0m
+[32m[2026-10-31 10:48:11,287] [    INFO][0m - Loaded weights file from disk, setting weights to model.[0m
+W1031 10:48:11.290045 12852 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.3, Runtime API Version: 11.8
+W1031 10:48:11.307763 12852 gpu_resources.cc:164] device: 0, cuDNN Version: 8.9.
+[32m[2026-10-31 10:48:11,990] [    INFO][0m - All model checkpoint weights were used when initializing UIE.
+[0m
+[32m[2026-10-31 10:48:11,991] [    INFO][0m - All the weights of UIE were initialized from the model checkpoint at ./models/uie-base.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use UIE for predictions without further training.[0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m - ============================================================[0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m -     Training Configuration Arguments    [0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m - paddle commit id              : 8ce0de584c570589117e403322f3d1a0de6554e5[0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m - _no_sync_in_gradient_accumulation: True[0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m - activation_quantize_type      : None[0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m - adam_beta1                    : 0.9[0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m - adam_beta2                    : 0.999[0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m - adam_epsilon                  : 1e-08[0m
+[32m[2026-10-31 10:48:12,177] [    INFO][0m - algo_list                     : None[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - amp_custom_black_list         : None[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - amp_custom_white_list         : None[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - amp_master_grad               : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - batch_num_list                : None[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - batch_size_list               : None[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - bf16                          : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - bf16_full_eval                : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - bias_correction               : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - current_device                : gpu:0[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - data_parallel_rank            : 0[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - dataloader_drop_last          : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - dataloader_num_workers        : 0[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - dataset_rank                  : 0[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - dataset_world_size            : 1[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - device                        : gpu[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - disable_tqdm                  : True[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - distributed_dataloader        : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - do_compress                   : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - do_eval                       : True[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - do_export                     : True[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - do_predict                    : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - do_train                      : True[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - eval_accumulation_steps       : None[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - eval_batch_size               : 16[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - eval_steps                    : 50[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - evaluation_strategy           : IntervalStrategy.STEPS[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - flatten_param_grads           : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - fp16                          : False[0m
+[32m[2026-10-31 10:48:12,178] [    INFO][0m - fp16_full_eval                : False[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - fp16_opt_level                : O1[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - gradient_accumulation_steps   : 1[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - greater_is_better             : True[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - hybrid_parallel_topo_order    : None[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - ignore_data_skip              : False[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - input_dtype                   : int64[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - input_infer_model_path        : None[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - label_names                   : ['start_positions', 'end_positions'][0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - lazy_data_processing          : True[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - learning_rate                 : 1e-05[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - load_best_model_at_end        : True[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - load_sharded_model            : False[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - local_process_index           : 0[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - local_rank                    : -1[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - log_level                     : -1[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - log_level_replica             : -1[0m
+[32m[2026-10-31 10:48:12,179] [    INFO][0m - log_on_each_node              : True[0m
+[32m[2026-10-31 10:48:12,180] [    INFO][0m - logging_dir                   : ./checkpoint/uie_jd_v1\runs\Oct31_10-48-10_DESKTOP-L11RL2V[0m
+[32m[2026-10-31 10:48:12,180] [    INFO][0m - logging_first_step            : False[0m
+[32m[2026-10-31 10:48:12,180] [    INFO][0m - logging_steps                 : 10[0m
+[32m[2026-10-31 10:48:12,180] [    INFO][0m - logging_strategy              : IntervalStrategy.STEPS[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - lr_end                        : 1e-07[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - lr_scheduler_type             : SchedulerType.LINEAR[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - max_evaluate_steps            : -1[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - max_grad_norm                 : 1.0[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - max_steps                     : -1[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - metric_for_best_model         : eval_f1[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - minimum_eval_times            : None[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - moving_rate                   : 0.9[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - no_cuda                       : False[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - num_cycles                    : 0.5[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - num_train_epochs              : 10.0[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - onnx_format                   : True[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - optim                         : OptimizerNames.ADAMW[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - optimizer_name_suffix         : None[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - output_dir                    : ./checkpoint/uie_jd_v1[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - overwrite_output_dir          : True[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - past_index                    : -1[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - per_device_eval_batch_size    : 16[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - per_device_train_batch_size   : 16[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - pipeline_parallel_config      : [0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - pipeline_parallel_degree      : -1[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - pipeline_parallel_rank        : 0[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - power                         : 1.0[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - prediction_loss_only          : False[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - process_index                 : 0[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - prune_embeddings              : False[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - recompute                     : False[0m
+[32m[2026-10-31 10:48:12,181] [    INFO][0m - remove_unused_columns         : True[0m
+[32m[2026-10-31 10:48:12,182] [    INFO][0m - report_to                     : ['visualdl'][0m
+[32m[2026-10-31 10:48:12,182] [    INFO][0m - resume_from_checkpoint        : None[0m
+[32m[2026-10-31 10:48:12,182] [    INFO][0m - round_type                    : round[0m
+[32m[2026-10-31 10:48:12,182] [    INFO][0m - run_name                      : ./checkpoint/uie_jd_v1[0m
+[32m[2026-10-31 10:48:12,182] [    INFO][0m - save_on_each_node             : False[0m
+[32m[2026-10-31 10:48:12,182] [    INFO][0m - save_sharded_model            : False[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - save_steps                    : 50[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - save_strategy                 : IntervalStrategy.STEPS[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - save_total_limit              : 1[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - scale_loss                    : 32768[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - seed                          : 42[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - sharding                      : [][0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - sharding_degree               : -1[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - sharding_parallel_config      : [0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - sharding_parallel_degree      : -1[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - sharding_parallel_rank        : 0[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - should_load_dataset           : True[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - should_load_sharding_stage1_model: False[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - should_log                    : True[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - should_save                   : True[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - should_save_model_state       : True[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - should_save_sharding_stage1_model: False[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - skip_memory_metrics           : True[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - skip_profile_timer            : True[0m
+[32m[2026-10-31 10:48:12,183] [    INFO][0m - strategy                      : dynabert+ptq[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - tensor_parallel_config        : [0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - tensor_parallel_degree        : -1[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - tensor_parallel_rank          : 0[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - train_batch_size              : 16[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - use_hybrid_parallel           : False[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - use_pact                      : True[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - warmup_ratio                  : 0.1[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - warmup_steps                  : 0[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - weight_decay                  : 0.0[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - weight_name_suffix            : None[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - weight_quantize_type          : channel_wise_abs_max[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - width_mult_list               : None[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - world_size                    : 1[0m
+[32m[2026-10-31 10:48:12,184] [    INFO][0m - [0m
+[32m[2026-10-31 10:48:12,185] [    INFO][0m - ***** Running training *****[0m
+[32m[2026-10-31 10:48:12,186] [    INFO][0m -   Num examples = 2,898[0m
+[32m[2026-10-31 10:48:12,186] [    INFO][0m -   Num Epochs = 10[0m
+[32m[2026-10-31 10:48:12,186] [    INFO][0m -   Instantaneous batch size per device = 16[0m
+[32m[2026-10-31 10:48:12,186] [    INFO][0m -   Total train batch size (w. parallel, distributed & accumulation) = 16[0m
+[32m[2026-10-31 10:48:12,186] [    INFO][0m -   Gradient Accumulation steps = 1[0m
+[32m[2026-10-31 10:48:12,186] [    INFO][0m -   Total optimization steps = 1,820[0m
+[32m[2026-10-31 10:48:12,186] [    INFO][0m -   Total num train samples = 28,980[0m
+[32m[2026-10-31 10:48:12,187] [    INFO][0m -   Number of trainable parameters = 117,946,370 (per device)[0m
+D:\anaconda\envs\uie_gpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:2478: FutureWarning: The `max_seq_len` argument is deprecated and will be removed in a future version, please use `max_length` instead.
+  warnings.warn(
+D:\anaconda\envs\uie_gpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:1878: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+[32m[2026-10-31 10:50:04,224] [    INFO][0m - loss: 0.00419211, learning_rate: 1e-05, global_step: 10, interval_runtime: 112.0358, interval_samples_per_second: 1.4281153067772567, interval_steps_per_second: 0.08925720667357855, epoch: 0.0549[0m
+[32m[2026-10-31 10:51:31,584] [    INFO][0m - loss: 0.00406981, learning_rate: 1e-05, global_step: 20, interval_runtime: 87.3602, interval_samples_per_second: 1.8314974750683766, interval_steps_per_second: 0.11446859219177354, epoch: 0.1099[0m
+[32m[2026-10-31 10:52:49,260] [    INFO][0m - loss: 0.00405758, learning_rate: 1e-05, global_step: 30, interval_runtime: 77.6748, interval_samples_per_second: 2.0598689702872206, interval_steps_per_second: 0.1287418106429513, epoch: 0.1648[0m
+[32m[2026-10-31 10:54:04,910] [    INFO][0m - loss: 0.00575331, learning_rate: 1e-05, global_step: 40, interval_runtime: 75.65, interval_samples_per_second: 2.115003981922464, interval_steps_per_second: 0.132187748870154, epoch: 0.2198[0m
+[32m[2026-10-31 10:55:21,053] [    INFO][0m - loss: 0.0027765, learning_rate: 1e-05, global_step: 50, interval_runtime: 76.1457, interval_samples_per_second: 2.1012340805810577, interval_steps_per_second: 0.1313271300363161, epoch: 0.2747[0m
+[32m[2026-10-31 10:55:21,060] [    INFO][0m - ***** Running Evaluation *****[0m
+[32m[2026-10-31 10:55:21,060] [    INFO][0m -   Num examples = 366[0m
+[32m[2026-10-31 10:55:21,060] [    INFO][0m -   Total prediction steps = 23[0m
+[32m[2026-10-31 10:55:21,060] [    INFO][0m -   Pre device batch size = 16[0m
+[32m[2026-10-31 10:55:21,060] [    INFO][0m -   Total Batch size = 16[0m
+[32m[2026-10-31 10:55:56,280] [    INFO][0m - eval_loss: 0.00443270243704319, eval_precision: 0.6153846153846154, eval_recall: 0.096, eval_f1: 0.1660899653979239, eval_runtime: 35.2183, eval_samples_per_second: 10.392324062465105, eval_steps_per_second: 0.6530695449090094, epoch: 0.2747[0m
+[32m[2026-10-31 10:55:56,280] [    INFO][0m - Saving model checkpoint to ./checkpoint/uie_jd_v1\checkpoint-50[0m
+[32m[2026-10-31 10:55:56,285] [    INFO][0m - Configuration saved in ./checkpoint/uie_jd_v1\checkpoint-50\config.json[0m
+[32m[2026-10-31 10:55:57,270] [    INFO][0m - Model weights saved in ./checkpoint/uie_jd_v1\checkpoint-50\model_state.pdparams[0m
+[32m[2026-10-31 10:55:57,277] [    INFO][0m - tokenizer config file saved in ./checkpoint/uie_jd_v1\checkpoint-50\tokenizer_config.json[0m
+[32m[2026-10-31 10:55:57,278] [    INFO][0m - Special tokens file saved in ./checkpoint/uie_jd_v1\checkpoint-50\special_tokens_map.json[0m
+[32m[2026-10-31 10:57:24,368] [    INFO][0m - loss: 0.00455593, learning_rate: 1e-05, global_step: 60, interval_runtime: 123.3051, interval_samples_per_second: 1.2975948358385874, interval_steps_per_second: 0.08109967723991171, epoch: 0.3297[0m
+[32m[2026-10-31 10:58:45,896] [    INFO][0m - loss: 0.00376684, learning_rate: 1e-05, global_step: 70, interval_runtime: 81.5342, interval_samples_per_second: 1.9623671496108337, interval_steps_per_second: 0.1226479468506771, epoch: 0.3846[0m
+[32m[2026-10-31 11:00:51,094] [    INFO][0m - loss: 0.00376425, learning_rate: 1e-05, global_step: 80, interval_runtime: 125.1989, interval_samples_per_second: 1.277966146985406, interval_steps_per_second: 0.07987288418658788, epoch: 0.4396[0m
+[32m[2026-10-31 11:02:12,806] [    INFO][0m - loss: 0.00253233, learning_rate: 1e-05, global_step: 90, interval_runtime: 81.7111, interval_samples_per_second: 1.9581171178689163, interval_steps_per_second: 0.12238231986680727, epoch: 0.4945[0m
+[32m[2026-10-31 11:03:35,935] [    INFO][0m - loss: 0.0030267, learning_rate: 1e-05, global_step: 100, interval_runtime: 83.1287, interval_samples_per_second: 1.9247273402332319, interval_steps_per_second: 0.12029545876457699, epoch: 0.5495[0m
+[32m[2026-10-31 11:03:35,935] [    INFO][0m - ***** Running Evaluation *****[0m
+[32m[2026-10-31 11:03:35,935] [    INFO][0m -   Num examples = 366[0m
+[32m[2026-10-31 11:03:35,935] [    INFO][0m -   Total prediction steps = 23[0m
+[32m[2026-10-31 11:03:35,935] [    INFO][0m -   Pre device batch size = 16[0m
+[32m[2026-10-31 11:03:35,935] [    INFO][0m -   Total Batch size = 16[0m
+[32m[2026-10-31 11:04:12,025] [    INFO][0m - eval_loss: 0.003938978537917137, eval_precision: 0.5384615384615384, eval_recall: 0.112, eval_f1: 0.18543046357615894, eval_runtime: 36.0866, eval_samples_per_second: 10.142281722723055, eval_steps_per_second: 0.6373565017011756, epoch: 0.5495[0m
+[32m[2026-10-31 11:04:12,025] [    INFO][0m - Saving model checkpoint to ./checkpoint/uie_jd_v1\checkpoint-100[0m
+[32m[2026-10-31 11:04:12,029] [    INFO][0m - Configuration saved in ./checkpoint/uie_jd_v1\checkpoint-100\config.json[0m
+[32m[2026-10-31 11:04:12,628] [    INFO][0m - Model weights saved in ./checkpoint/uie_jd_v1\checkpoint-100\model_state.pdparams[0m
+[32m[2026-10-31 11:04:12,630] [    INFO][0m - tokenizer config file saved in ./checkpoint/uie_jd_v1\checkpoint-100\tokenizer_config.json[0m
+[32m[2026-10-31 11:04:12,631] [    INFO][0m - Special tokens file saved in ./checkpoint/uie_jd_v1\checkpoint-100\special_tokens_map.json[0m
+[32m[2026-10-31 11:05:41,515] [    INFO][0m - loss: 0.00394858, learning_rate: 1e-05, global_step: 110, interval_runtime: 125.581, interval_samples_per_second: 1.2740785219664368, interval_steps_per_second: 0.0796299076229023, epoch: 0.6044[0m
+[32m[2026-10-31 11:07:06,034] [    INFO][0m - loss: 0.00422181, learning_rate: 1e-05, global_step: 120, interval_runtime: 84.5186, interval_samples_per_second: 1.8930734682542947, interval_steps_per_second: 0.11831709176589342, epoch: 0.6593[0m
+[32m[2026-10-31 11:08:34,342] [    INFO][0m - loss: 0.0035838, learning_rate: 1e-05, global_step: 130, interval_runtime: 88.3081, interval_samples_per_second: 1.8118383401169662, interval_steps_per_second: 0.11323989625731039, epoch: 0.7143[0m
+[32m[2026-10-31 11:09:56,989] [    INFO][0m - loss: 0.00406606, learning_rate: 1e-05, global_step: 140, interval_runtime: 82.6468, interval_samples_per_second: 1.9359485247180659, interval_steps_per_second: 0.12099678279487912, epoch: 0.7692[0m
+[32m[2026-10-31 11:11:23,210] [    INFO][0m - loss: 0.00525243, learning_rate: 1e-05, global_step: 150, interval_runtime: 86.2208, interval_samples_per_second: 1.8557003037355269, interval_steps_per_second: 0.11598126898347043, epoch: 0.8242[0m
+[32m[2026-10-31 11:11:23,210] [    INFO][0m - ***** Running Evaluation *****[0m
+[32m[2026-10-31 11:11:23,210] [    INFO][0m -   Num examples = 366[0m
+[32m[2026-10-31 11:11:23,211] [    INFO][0m -   Total prediction steps = 23[0m
+[32m[2026-10-31 11:11:23,211] [    INFO][0m -   Pre device batch size = 16[0m
+[32m[2026-10-31 11:11:23,211] [    INFO][0m -   Total Batch size = 16[0m
+[32m[2026-10-31 11:11:58,785] [    INFO][0m - eval_loss: 0.0037572539877146482, eval_precision: 0.6595744680851063, eval_recall: 0.124, eval_f1: 0.20875420875420875, eval_runtime: 35.5721, eval_samples_per_second: 10.288957129154946, eval_steps_per_second: 0.6465738086627426, epoch: 0.8242[0m
+[32m[2026-10-31 11:11:58,786] [    INFO][0m - Saving model checkpoint to ./checkpoint/uie_jd_v1\checkpoint-150[0m
+[32m[2026-10-31 11:11:58,789] [    INFO][0m - Configuration saved in ./checkpoint/uie_jd_v1\checkpoint-150\config.json[0m
+[32m[2026-10-31 11:11:59,401] [    INFO][0m - Model weights saved in ./checkpoint/uie_jd_v1\checkpoint-150\model_state.pdparams[0m
+[32m[2026-10-31 11:11:59,403] [    INFO][0m - tokenizer config file saved in ./checkpoint/uie_jd_v1\checkpoint-150\tokenizer_config.json[0m
+[32m[2026-10-31 11:11:59,403] [    INFO][0m - Special tokens file saved in ./checkpoint/uie_jd_v1\checkpoint-150\special_tokens_map.json[0m
+[32m[2026-10-31 11:12:00,746] [    INFO][0m - Deleting older checkpoint [checkpoint\uie_jd_v1\checkpoint-50] due to args.save_total_limit[0m
+[32m[2026-10-31 11:13:23,047] [    INFO][0m - loss: 0.0053793, learning_rate: 1e-05, global_step: 160, interval_runtime: 119.8365, interval_samples_per_second: 1.3351520092016311, interval_steps_per_second: 0.08344700057510195, epoch: 0.8791[0m
+[32m[2026-10-31 11:14:43,928] [    INFO][0m - loss: 0.00412418, learning_rate: 1e-05, global_step: 170, interval_runtime: 80.8817, interval_samples_per_second: 1.9781969528170757, interval_steps_per_second: 0.12363730955106723, epoch: 0.9341[0m
+[32m[2026-10-31 11:16:05,042] [    INFO][0m - loss: 0.00402946, learning_rate: 1e-05, global_step: 180, interval_runtime: 81.1131, interval_samples_per_second: 1.9725541326324407, interval_steps_per_second: 0.12328463328952755, epoch: 0.989[0m

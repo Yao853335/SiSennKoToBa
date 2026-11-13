@@ -1,0 +1,49 @@
+==== session 1 PRE ====
+Deploy
+mini repro
+
+thread=ScriptRunner.scriptThread
+
+dygraph=True
+
+place=Place(cpu)
+
+run
+==== session 1 POST ====
+Deploy
+mini repro
+
+thread=ScriptRunner.scriptThread
+
+dygraph=False
+
+place=Place(cpu)
+
+run
+
+PREDICT_OK entities=6
+
+==== session 2 PRE ====
+Deploy
+mini repro
+
+thread=ScriptRunner.scriptThread
+
+dygraph=False
+
+place=Place(cpu)
+
+run
+==== session 2 POST ====
+Deploy
+mini repro
+
+thread=ScriptRunner.scriptThread
+
+dygraph=False
+
+place=Place(cpu)
+
+run
+
+PREDICT_OK entities=6

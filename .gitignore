@@ -1,0 +1,38 @@
+# ===== 虚拟环境与缓存（约 1.3GB，可由 requirements.txt 重建）=====
+.venv/
+.label-studio-venv/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ===== 模型权重（约 9GB，训练产物，另附下载与复现说明）=====
+week9-10/checkpoint/
+week9-10/models/
+*.pdparams
+*.pdopt
+*.pdiparams
+*.pdmodel
+
+# ===== 第三方库与公开数据集（可另行下载，不纳入版本库）=====
+third_party/
+eighth_week/source/
+
+# ===== 浏览器自动化配置（含 Cookie 与登录态，严禁上传）=====
+edgeprofile/
+week12/logs/probe/edgeprofile/
+
+# ===== Label Studio 本地数据（含账号、口令散列与上传媒体）=====
+.label-studio-data/
+
+# ===== 可再生成的渲染产物（注意：logs 下的实验记录 .md/.json 必须保留）=====
+week12/logs/*.html
+week11/logs/*.html
+week12/logs/streamlit*.log
+
+# ===== IDE 与系统文件 =====
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,116 @@
+D:\anaconda\envs\uie_cpu\lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+test lines=360 unique texts=60
+[32m[2026-10-31 10:08:51,872] [    INFO][0m - We are using <class 'paddlenlp.transformers.ernie.tokenizer.ErnieTokenizer'> to load 'D:\SiSennKoToBa\.cache\paddlenlp\taskflow\information_extraction\uie-base'.[0m
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:2478: FutureWarning: The `max_seq_len` argument is deprecated and will be removed in a future version, please use `max_length` instead.
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:1878: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+progress=8/60 elapsed=6.6s
+progress=16/60 elapsed=12.4s
+progress=24/60 elapsed=18.2s
+progress=32/60 elapsed=24.4s
+progress=40/60 elapsed=31.2s
+progress=48/60 elapsed=38.1s
+progress=56/60 elapsed=44.5s
+progress=60/60 elapsed=47.7s
+{
+  "task": "week9_zero_shot_baseline",
+  "model": "uie-base",
+  "device": "cpu",
+  "schema_version": "schema_v1",
+  "schema": [
+    "技能",
+    "学历",
+    "经验年限",
+    "岗位名称",
+    "语言能力",
+    "知识领域"
+  ],
+  "test_path": "D:\\SiSennKoToBa\\week9-10\\data\\test.txt",
+  "test_lines": 360,
+  "unique_texts": 60,
+  "position_prob": 0.5,
+  "batch_size": 8,
+  "inference_seconds": 50.472,
+  "alignment_rule": "(start, end, label) 与 gold 完全一致才算 TP；与 evaluate.py SpanEvaluator 一致",
+  "fields": [
+    {
+      "label": "技能",
+      "support_gold": 124,
+      "predicted": 2,
+      "TP": 1,
+      "FP": 1,
+      "FN": 123,
+      "precision": 0.5,
+      "recall": 0.00806,
+      "f1": 0.01587
+    },
+    {
+      "label": "学历",
+      "support_gold": 5,
+      "predicted": 5,
+      "TP": 0,
+      "FP": 5,
+      "FN": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "label": "经验年限",
+      "support_gold": 17,
+      "predicted": 7,
+      "TP": 6,
+      "FP": 1,
+      "FN": 11,
+      "precision": 0.85714,
+      "recall": 0.35294,
+      "f1": 0.5
+    },
+    {
+      "label": "岗位名称",
+      "support_gold": 13,
+      "predicted": 2,
+      "TP": 1,
+      "FP": 1,
+      "FN": 12,
+      "precision": 0.5,
+      "recall": 0.07692,
+      "f1": 0.13333
+    },
+    {
+      "label": "语言能力",
+      "support_gold": 4,
+      "predicted": 1,
+      "TP": 1,
+      "FP": 0,
+      "FN": 3,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4
+    },
+    {
+      "label": "知识领域",
+      "support_gold": 85,
+      "predicted": 27,
+      "TP": 23,
+      "FP": 4,
+      "FN": 62,
+      "precision": 0.85185,
+      "recall": 0.27059,
+      "f1": 0.41071
+    }
+  ],
+  "overall_micro": {
+    "TP": 32,
+    "FP": 12,
+    "FN": 216,
+    "precision": 0.72727,
+    "recall": 0.12903,
+    "f1": 0.21918
+  },
+  "macro_f1": 0.24332
+}

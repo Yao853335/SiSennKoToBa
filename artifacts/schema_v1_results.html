@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Schema v1 零样本结果</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #62708a;
+      --line: #dce3ee;
+      --blue: #2457a6;
+      --blue-bg: #eaf1ff;
+      --green: #087a55;
+      --green-bg: #e7f7ef;
+      --amber: #8a5400;
+      --amber-bg: #fff3d7;
+      --red: #a33b32;
+      --red-bg: #ffebe8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f3f6fb;
+      color: var(--ink);
+      font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif;
+    }
+    .page {
+      width: 1780px;
+      margin: 32px auto;
+      padding: 42px 44px 38px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 16px 48px rgba(32, 48, 75, .10);
+    }
+    .eyebrow { color: var(--blue); font-weight: 700; font-size: 15px; letter-spacing: .12em; }
+    h1 { margin: 9px 0 8px; font-size: 34px; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 17px; }
+    .stats { display: flex; gap: 12px; margin: 24px 0 22px; }
+    .stat {
+      min-width: 180px;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fafcff;
+    }
+    .stat b { display: block; font-size: 25px; margin-bottom: 3px; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 9px;
+      vertical-align: top;
+      font-size: 12.5px;
+      line-height: 1.45;
+    }
+    th { background: #edf3fc; color: #344865; font-size: 12.5px; text-align: left; }
+    td:first-child { font-weight: 700; width: 116px; }
+    .ok { color: var(--green); }
+    .partial { color: var(--amber); }
+    .missing { color: var(--red); }
+    .tag {
+      display: inline-block;
+      margin: 1px 2px 1px 0;
+      padding: 2px 6px;
+      border-radius: 5px;
+      background: var(--blue-bg);
+      color: #24497e;
+      white-space: nowrap;
+    }
+    .note {
+      margin-top: 20px;
+      padding: 14px 17px;
+      border-left: 4px solid var(--blue);
+      background: #f7faff;
+      color: #42516b;
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="eyebrow">SiSennKoToBa · SCHEMA V1 · ZERO-SHOT</div>
+    <h1>药品说明书 6 字段零样本抽取结果</h1>
+    <p class="subtitle">uie-base / CPU / 10 条测试文本 / 22.325 秒（模型加载后）</p>
+    <div class="stats">
+      <div class="stat"><b>10 / 10</b><span>药品名称命中</span></div>
+      <div class="stat"><b>10 / 10</b><span>给药途径命中</span></div>
+      <div class="stat"><b>7 / 10</b><span>用量可用</span></div>
+      <div class="stat"><b>5 / 10</b><span>频次正确</span></div>
+      <div class="stat"><b>5.2 / 6</b><span>平均非空字段数</span></div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>样例</th>
+          <th>药品名称</th>
+          <th>用法</th>
+          <th>用量</th>
+          <th>频次</th>
+          <th>适应症</th>
+          <th>禁忌</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01 布洛芬<br>分散片</td>
+          <td class="ok">布洛芬分散片</td><td class="ok">口服</td><td class="ok">1片</td>
+          <td class="missing">缺失（文本有 4–6 小时、24 小时上限）</td>
+          <td class="partial">8 个症状片段</td><td class="ok">对本品及其他非甾体抗炎药过敏者</td>
+        </tr>
+        <tr>
+          <td>02 阿莫西林<br>胶囊</td>
+          <td class="ok">阿莫西林胶囊</td><td class="ok">口服</td><td class="ok">0.5g</td>
+          <td class="missing">缺失（文本有每 6–8 小时一次）</td>
+          <td class="ok">3 类感染</td><td class="ok">青霉素过敏者</td>
+        </tr>
+        <tr>
+          <td>03 蒙脱石散</td>
+          <td class="ok">蒙脱石散</td><td class="ok">口服</td><td class="partial">误抽为“口服”</td>
+          <td class="ok">一日3次</td><td class="ok">慢性腹泻</td><td class="ok">对本品过敏者</td>
+        </tr>
+        <tr>
+          <td>04 对乙酰<br>氨基酚片</td>
+          <td class="ok">对乙酰氨基酚片</td><td class="ok">口服</td><td class="ok">0.5g</td>
+          <td class="partial">误抽为“一次”</td><td class="ok">普通感冒、发热</td><td class="ok">严重肝肾功能不全者</td>
+        </tr>
+        <tr>
+          <td>05 硝苯地平<br>控释片</td>
+          <td class="ok">硝苯地平控释片</td><td class="ok">口服</td><td class="ok">30mg</td>
+          <td class="ok">一日1次</td><td class="ok">高血压、冠心病慢性稳定型心绞痛</td><td class="ok">对硝苯地平过敏者</td>
+        </tr>
+        <tr>
+          <td>06 奥美拉唑<br>肠溶胶囊</td>
+          <td class="ok">奥美拉唑肠溶胶囊</td><td class="ok">口服</td><td class="ok">20mg</td>
+          <td class="missing">缺失（文本有一日1次）</td>
+          <td class="ok">胃溃疡、十二指肠溃疡、反流性食管炎</td><td class="ok">对奥美拉唑等过敏者</td>
+        </tr>
+        <tr>
+          <td>07 氯雷<br>他定片</td>
+          <td class="ok">氯雷他定片</td><td class="ok">口服</td><td class="ok">10mg</td>
+          <td class="ok">一日1次</td><td class="partial">7 个症状/疾病片段</td><td class="ok">对本品成分过敏者</td>
+        </tr>
+        <tr>
+          <td>08 复方<br>甘草片</td>
+          <td class="ok">复方甘草片</td><td class="ok">口服、含化</td><td class="ok">3至4片</td>
+          <td class="ok">一日3次</td><td class="missing">缺失（用于镇咳祛痰）</td>
+          <td class="partial">孕妇、哺乳期妇女（漏“禁用”）</td>
+        </tr>
+        <tr>
+          <td>09 门冬胰岛素<br>注射液</td>
+          <td class="ok">门冬胰岛素注射液</td><td class="ok">皮下注射</td>
+          <td class="missing">缺失（剂量需个体化）</td><td class="missing">文本无明确频次</td>
+          <td class="ok">糖尿病</td><td class="missing">缺失（低血糖发作时禁用）</td>
+        </tr>
+        <tr>
+          <td>10 红霉素<br>软膏</td>
+          <td class="ok">红霉素软膏</td><td class="ok">外用</td>
+          <td class="partial">缺失（原文为适量）</td><td class="ok">一日2次</td>
+          <td class="ok">4 个感染/皮肤病片段</td><td class="ok">对红霉素过敏者</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">
+      结论：药品名称与给药途径已经可以支撑基线展示；“频次”在间隔式表述和“用法用量”合写时最不稳定；
+      “用量”对“适量”“个体化调整”及单位前缺少数值的文本覆盖不足。第 8 周应优先对用量、频次进行少量人工标注微调，
+      并为适应症/禁忌增加同义表达样本。
+    </div>
+  </main>
+</body>
+</html>

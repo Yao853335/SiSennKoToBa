@@ -1,0 +1,13 @@
+PS D:\SiSennKoToBa\week9-10> python scripts/evaluate.py --model_path ./checkpoint/uie_jd_v1 --test_path data/test.txt --debug   # run 2026-10-31 (real log)
+[2026-10-31 13:57:58,979] [    INFO] - Class Name: 知识领域
+[2026-10-31 13:57:58,979] [    INFO] - Evaluation Precision: 0.63333 | Recall: 0.22353 | F1: 0.33043
+[2026-10-31 13:59:29,971] [    INFO] - Class Name: 技能
+[2026-10-31 13:59:29,971] [    INFO] - Evaluation Precision: 0.43243 | Recall: 0.25806 | F1: 0.32323
+[2026-10-31 13:59:53,663] [    INFO] - Class Name: 岗位名称
+[2026-10-31 13:59:53,663] [    INFO] - Evaluation Precision: 0.33333 | Recall: 0.15385 | F1: 0.21053
+[2026-10-31 14:00:31,294] [    INFO] - Class Name: 经验年限
+[2026-10-31 14:00:31,294] [    INFO] - Evaluation Precision: 0.92308 | Recall: 0.70588 | F1: 0.80000
+[2026-10-31 14:00:46,081] [    INFO] - Class Name: 学历
+[2026-10-31 14:00:46,081] [    INFO] - Evaluation Precision: 1.00000 | Recall: 0.80000 | F1: 0.88889
+[2026-10-31 14:00:51,867] [    INFO] - Class Name: 语言能力
+[2026-10-31 14:00:51,867] [    INFO] - Evaluation Precision: 0.66667 | Recall: 0.50000 | F1: 0.57143

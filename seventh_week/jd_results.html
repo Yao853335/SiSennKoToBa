@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>JD Schema v1 零样本结果</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f3f6fa;
+      color: #172033;
+      font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif;
+    }
+    .page {
+      width: 1800px;
+      margin: 34px auto;
+      padding: 42px 44px 36px;
+      background: #fff;
+      border: 1px solid #dce3ee;
+      border-radius: 22px;
+      box-shadow: 0 16px 44px rgba(31, 48, 74, .09);
+    }
+    .eyebrow { color: #315f9e; font-weight: 700; font-size: 15px; letter-spacing: .14em; }
+    h1 { margin: 9px 0 8px; font-size: 34px; }
+    .subtitle { margin: 0; color: #62708a; font-size: 17px; }
+    .stats { display: flex; gap: 12px; margin: 24px 0 22px; }
+    .stat {
+      min-width: 152px;
+      padding: 14px 18px;
+      border: 1px solid #dce3ee;
+      border-radius: 13px;
+      background: #fafcff;
+    }
+    .stat b { display: block; font-size: 24px; margin-bottom: 3px; }
+    .stat span { color: #62708a; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th, td {
+      border: 1px solid #dce3ee;
+      padding: 10px 9px;
+      vertical-align: middle;
+      font-size: 13px;
+      line-height: 1.48;
+    }
+    th { background: #edf3fc; color: #344865; text-align: left; }
+    td:first-child { font-weight: 700; width: 135px; }
+    .ok { color: #087a55; }
+    .partial { color: #8a5400; }
+    .missing { color: #a33b32; }
+    .note {
+      margin-top: 21px;
+      padding: 15px 18px;
+      background: #f7faff;
+      border-left: 4px solid #315f9e;
+      color: #42516b;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="eyebrow">第 7 周 · SCHEMA V1 · ZERO-SHOT</div>
+    <h1>招聘 JD 五字段零样本抽取结果</h1>
+    <p class="subtitle">uie-base / CPU / 10 条测试文本 / 13.815 秒（模型加载后）</p>
+    <div class="stats">
+      <div class="stat"><b>10 / 10</b><span>岗位名称</span></div>
+      <div class="stat"><b>10 / 10</b><span>学历</span></div>
+      <div class="stat"><b>10 / 10</b><span>经验要求</span></div>
+      <div class="stat"><b>10 / 10</b><span>工作地点</span></div>
+      <div class="stat"><b>2 / 10</b><span>技能部分命中</span></div>
+      <div class="stat"><b>4.2 / 5</b><span>平均非空字段</span></div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>岗位</th>
+          <th>岗位名称</th>
+          <th>技能</th>
+          <th>学历</th>
+          <th>经验要求</th>
+          <th>工作地点</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>数据分析师</td><td class="ok">数据分析师</td>
+          <td class="partial">SQL、Python、Excel；漏 Tableau、Power BI</td>
+          <td class="ok">本科及以上</td><td class="ok">3年以上</td><td class="ok">上海</td>
+        </tr>
+        <tr>
+          <td>AI算法工程师</td><td class="ok">AI算法工程师</td>
+          <td class="missing">未抽出 Python、PyTorch、TensorFlow</td>
+          <td class="ok">硕士及以上</td><td class="ok">2年以上</td><td class="ok">北京</td>
+        </tr>
+        <tr>
+          <td>前端开发工程师</td><td class="ok">前端开发工程师</td>
+          <td class="missing">未抽出 JavaScript、TypeScript、Vue、CSS</td>
+          <td class="ok">本科及以上</td><td class="ok">1年以上</td><td class="ok">深圳</td>
+        </tr>
+        <tr>
+          <td>Java后端开发工程师</td><td class="ok">Java后端开发工程师</td>
+          <td class="missing">未抽出 Spring Boot、MySQL、Redis、消息队列</td>
+          <td class="ok">本科及以上</td><td class="ok">3至5年</td><td class="ok">杭州</td>
+        </tr>
+        <tr>
+          <td>产品经理</td><td class="ok">产品经理</td>
+          <td class="partial">抽出“沟通能力”；漏需求分析、产品规划</td>
+          <td class="ok">本科及以上</td><td class="ok">2年以上</td><td class="ok">广州</td>
+        </tr>
+        <tr>
+          <td>市场运营专员</td><td class="ok">市场运营专员</td>
+          <td class="missing">未抽出新媒体运营、活动策划</td>
+          <td class="ok">大专及以上</td><td class="ok">1年以上</td><td class="ok">成都</td>
+        </tr>
+        <tr>
+          <td>测试工程师</td><td class="ok">测试工程师</td>
+          <td class="missing">未抽出自动化测试、Selenium、Python</td>
+          <td class="ok">本科及以上</td><td class="ok">2年以上</td><td class="ok">南京</td>
+        </tr>
+        <tr>
+          <td>嵌入式软件工程师</td><td class="ok">嵌入式软件工程师</td>
+          <td class="missing">未抽出 C/C++、Linux、STM32</td>
+          <td class="ok">本科及以上</td><td class="ok">3年以上</td><td class="ok">武汉</td>
+        </tr>
+        <tr>
+          <td>人力资源专员</td><td class="ok">人力资源专员</td>
+          <td class="missing">未抽出招聘流程、劳动法规</td>
+          <td class="ok">本科及以上</td><td class="ok">1至3年</td><td class="ok">西安</td>
+        </tr>
+        <tr>
+          <td>运维工程师</td><td class="ok">运维工程师</td>
+          <td class="missing">未抽出 Docker、Kubernetes、Shell、监控系统</td>
+          <td class="ok">大专及以上</td><td class="ok">2年以上</td><td class="ok">苏州</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">
+      结论：岗位名称、学历、经验要求、工作地点可以直接作为零样本基线；“技能”字段只在显式英文技术名词较集中时部分命中，
+      无法稳定覆盖中文技能短语和技术栈组合。阶段一因此保留该字段但明确其风险，第 8 至 10 周通过标注、字段拆分与微调提升。
+    </div>
+  </main>
+</body>
+</html>

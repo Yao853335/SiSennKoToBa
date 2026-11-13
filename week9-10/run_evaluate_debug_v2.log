@@ -1,0 +1,34 @@
+D:\anaconda\envs\uie_cpu\lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[32m[2026-10-31 17:17:07,660] [    INFO][0m - We are using <class 'paddlenlp.transformers.ernie.tokenizer.ErnieTokenizer'> to load './checkpoint/uie_jd_v2'.[0m
+[32m[2026-10-31 17:17:07,673] [    INFO][0m - Loading configuration file ./checkpoint/uie_jd_v2\config.json[0m
+[32m[2026-10-31 17:17:07,673] [    INFO][0m - Loading weights file ./checkpoint/uie_jd_v2\model_state.pdparams[0m
+[32m[2026-10-31 17:17:07,883] [    INFO][0m - Loaded weights file from disk, setting weights to model.[0m
+[32m[2026-10-31 17:17:15,191] [    INFO][0m - All model checkpoint weights were used when initializing UIE.
+[0m
+[32m[2026-10-31 17:17:15,191] [    INFO][0m - All the weights of UIE were initialized from the model checkpoint at ./checkpoint/uie_jd_v2.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use UIE for predictions without further training.[0m
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:2478: FutureWarning: The `max_seq_len` argument is deprecated and will be removed in a future version, please use `max_length` instead.
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:1878: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+[32m[2026-10-31 17:18:35,101] [    INFO][0m - -----------------------------[0m
+[32m[2026-10-31 17:18:35,101] [    INFO][0m - Class Name: 知识领域[0m
+[32m[2026-10-31 17:18:35,101] [    INFO][0m - Evaluation Precision: 0.60465 | Recall: 0.30588 | F1: 0.40625[0m
+[32m[2026-10-31 17:19:59,479] [    INFO][0m - -----------------------------[0m
+[32m[2026-10-31 17:19:59,479] [    INFO][0m - Class Name: 专业技能[0m
+[32m[2026-10-31 17:19:59,479] [    INFO][0m - Evaluation Precision: 0.34483 | Recall: 0.16129 | F1: 0.21978[0m
+[32m[2026-10-31 17:20:20,478] [    INFO][0m - -----------------------------[0m
+[32m[2026-10-31 17:20:20,478] [    INFO][0m - Class Name: 招聘职位[0m
+[32m[2026-10-31 17:20:20,478] [    INFO][0m - Evaluation Precision: 0.33333 | Recall: 0.15385 | F1: 0.21053[0m
+[32m[2026-10-31 17:20:49,265] [    INFO][0m - -----------------------------[0m
+[32m[2026-10-31 17:20:49,265] [    INFO][0m - Class Name: 经验年限[0m
+[32m[2026-10-31 17:20:49,265] [    INFO][0m - Evaluation Precision: 0.92308 | Recall: 0.70588 | F1: 0.80000[0m
+[32m[2026-10-31 17:21:02,431] [    INFO][0m - -----------------------------[0m
+[32m[2026-10-31 17:21:02,431] [    INFO][0m - Class Name: 学历[0m
+[32m[2026-10-31 17:21:02,431] [    INFO][0m - Evaluation Precision: 1.00000 | Recall: 1.00000 | F1: 1.00000[0m
+[32m[2026-10-31 17:21:07,814] [    INFO][0m - -----------------------------[0m
+[32m[2026-10-31 17:21:07,814] [    INFO][0m - Class Name: 语言能力[0m
+[32m[2026-10-31 17:21:07,814] [    INFO][0m - Evaluation Precision: 0.33333 | Recall: 0.25000 | F1: 0.28571[0m

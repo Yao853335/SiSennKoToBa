@@ -1,0 +1,152 @@
+{
+  "task": "week10_finetuned_evaluation_v2",
+  "model_path": "./checkpoint/uie_jd_v2",
+  "eval_schema": [
+    "专业技能",
+    "学历",
+    "经验年限",
+    "招聘职位",
+    "语言能力",
+    "知识领域"
+  ],
+  "label_map_to_v1": {
+    "专业技能": "技能",
+    "招聘职位": "岗位名称"
+  },
+  "test_path": "data_v2\\test.txt",
+  "test_lines": 360,
+  "unique_texts": 60,
+  "position_prob": 0.5,
+  "alignment_rule": "(start, end, label) 与 gold 完全一致才算 TP；与 evaluate.py SpanEvaluator 一致",
+  "inference_seconds": 45.292,
+  "fields": [
+    {
+      "support_gold": 124,
+      "predicted": 60,
+      "TP": 20,
+      "FP": 40,
+      "FN": 104,
+      "precision": 0.33333,
+      "recall": 0.16129,
+      "f1": 0.21739,
+      "label": "技能",
+      "schema_label": "专业技能"
+    },
+    {
+      "support_gold": 5,
+      "predicted": 5,
+      "TP": 5,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "label": "学历",
+      "schema_label": "学历"
+    },
+    {
+      "support_gold": 17,
+      "predicted": 13,
+      "TP": 12,
+      "FP": 1,
+      "FN": 5,
+      "precision": 0.92308,
+      "recall": 0.70588,
+      "f1": 0.8,
+      "label": "经验年限",
+      "schema_label": "经验年限"
+    },
+    {
+      "support_gold": 13,
+      "predicted": 9,
+      "TP": 2,
+      "FP": 7,
+      "FN": 11,
+      "precision": 0.22222,
+      "recall": 0.15385,
+      "f1": 0.18182,
+      "label": "岗位名称",
+      "schema_label": "招聘职位"
+    },
+    {
+      "support_gold": 4,
+      "predicted": 3,
+      "TP": 1,
+      "FP": 2,
+      "FN": 3,
+      "precision": 0.33333,
+      "recall": 0.25,
+      "f1": 0.28571,
+      "label": "语言能力",
+      "schema_label": "语言能力"
+    },
+    {
+      "support_gold": 85,
+      "predicted": 43,
+      "TP": 26,
+      "FP": 17,
+      "FN": 59,
+      "precision": 0.60465,
+      "recall": 0.30588,
+      "f1": 0.40625,
+      "label": "知识领域",
+      "schema_label": "知识领域"
+    }
+  ],
+  "overall_micro": {
+    "support_gold": 248,
+    "predicted": 133,
+    "TP": 66,
+    "FP": 67,
+    "FN": 182,
+    "precision": 0.49624,
+    "recall": 0.26613,
+    "f1": 0.34646
+  },
+  "macro_f1": 0.48186,
+  "debug_positive_fields_official_span_evaluator": [
+    {
+      "label": "知识领域",
+      "precision": 0.60465,
+      "recall": 0.30588,
+      "f1": 0.40625,
+      "label_original": "知识领域"
+    },
+    {
+      "label": "技能",
+      "precision": 0.34483,
+      "recall": 0.16129,
+      "f1": 0.21978,
+      "label_original": "专业技能"
+    },
+    {
+      "label": "岗位名称",
+      "precision": 0.33333,
+      "recall": 0.15385,
+      "f1": 0.21053,
+      "label_original": "招聘职位"
+    },
+    {
+      "label": "经验年限",
+      "precision": 0.92308,
+      "recall": 0.70588,
+      "f1": 0.8,
+      "label_original": "经验年限"
+    },
+    {
+      "label": "学历",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "label_original": "学历"
+    },
+    {
+      "label": "语言能力",
+      "precision": 0.33333,
+      "recall": 0.25,
+      "f1": 0.28571,
+      "label_original": "语言能力"
+    }
+  ],
+  "debug_log": "run_evaluate_debug_v2.log"
+}

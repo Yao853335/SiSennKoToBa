@@ -1,0 +1,35 @@
+{
+  "task": "week8_provisional_label_build",
+  "output": "D:\\SiSennKoToBa\\eighth_week\\label_studio.json",
+  "sha256": "0c692e6ef920121f920499570b4b0e7425ace3eb6aeb87d0a1288575bc580755",
+  "task_count": 600,
+  "empty_annotation_count": 160,
+  "labelled_task_count": 440,
+  "span_count": 2332,
+  "label_counts": {
+    "技能": 1144,
+    "学历": 84,
+    "经验年限": 130,
+    "岗位名称": 178,
+    "语言能力": 46,
+    "知识领域": 750
+  },
+  "evidence_counts": {
+    "skillspan_S": 1129,
+    "degree_rule": 78,
+    "skillspan_K": 639,
+    "uie_zero_shot": 146,
+    "job_title_rule": 169,
+    "experience_rule": 125,
+    "skillspan_L": 32,
+    "language_rule": 10,
+    "source_title_rule": 4
+  },
+  "review_status": "silver_reviewed",
+  "human_reviewed": false,
+  "consistency_audit": {
+    "sample_size": 120,
+    "exact_span_f1_vs_source_only": 0.8252,
+    "records_with_differences": 46
+  }
+}

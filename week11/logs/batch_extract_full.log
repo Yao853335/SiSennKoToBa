@@ -1,0 +1,99 @@
+批量推理文本数: 700
+D:\anaconda\envs\uie_cpu\lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[32m[2026-11-03 11:11:42,958] [    INFO][0m - We are using <class 'paddlenlp.transformers.ernie.tokenizer.ErnieTokenizer'> to load 'D:\SiSennKoToBa\week9-10\checkpoint\uie_jd_v2'.[0m
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:2478: FutureWarning: The `max_seq_len` argument is deprecated and will be removed in a future version, please use `max_length` instead.
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:1878: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  8/700  3.4s
+  16/700  8.0s
+  24/700  13.0s
+  32/700  16.6s
+  40/700  23.2s
+  48/700  26.4s
+  56/700  28.4s
+  64/700  31.8s
+  72/700  35.1s
+  80/700  38.2s
+  88/700  42.6s
+  96/700  47.2s
+  104/700  50.2s
+  112/700  54.2s
+  120/700  57.2s
+  128/700  60.0s
+  136/700  63.9s
+  144/700  66.6s
+  152/700  69.9s
+  160/700  74.8s
+  168/700  78.9s
+  176/700  83.4s
+  184/700  86.0s
+  192/700  88.3s
+  200/700  92.0s
+  208/700  96.0s
+  216/700  103.9s
+  224/700  109.6s
+  232/700  114.5s
+  240/700  117.4s
+  248/700  120.5s
+  256/700  124.9s
+  264/700  128.3s
+  272/700  133.4s
+  280/700  139.0s
+  288/700  141.9s
+  296/700  146.6s
+  304/700  150.3s
+  312/700  153.6s
+  320/700  157.9s
+  328/700  161.5s
+  336/700  165.9s
+  344/700  172.4s
+  352/700  176.8s
+  360/700  181.2s
+  368/700  186.1s
+  376/700  193.1s
+  384/700  197.9s
+  392/700  222.4s
+  400/700  226.9s
+  408/700  229.7s
+  416/700  233.0s
+  424/700  237.8s
+  432/700  241.8s
+  440/700  246.8s
+  448/700  250.9s
+  456/700  254.5s
+  464/700  259.1s
+  472/700  263.4s
+  480/700  268.6s
+  488/700  272.3s
+  496/700  276.8s
+  504/700  280.3s
+  512/700  283.8s
+  520/700  288.3s
+  528/700  292.7s
+  536/700  296.0s
+  544/700  299.1s
+  552/700  302.3s
+  560/700  304.7s
+  568/700  309.6s
+  576/700  313.8s
+  584/700  317.1s
+  592/700  322.0s
+  600/700  326.4s
+  608/700  329.6s
+  616/700  333.5s
+  624/700  336.6s
+  632/700  339.5s
+  640/700  342.3s
+  648/700  348.5s
+  656/700  353.4s
+  664/700  358.6s
+  672/700  362.0s
+  680/700  366.4s
+  688/700  372.0s
+  696/700  375.1s
+  700/700  376.6s
+完成，用时 376.6s -> D:\SiSennKoToBa\week11\logs\batch_results.jsonl

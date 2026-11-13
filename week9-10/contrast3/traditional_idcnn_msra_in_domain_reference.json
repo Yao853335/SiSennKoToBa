@@ -1,0 +1,192 @@
+{
+  "task": "contrast3_traditional_idcnn",
+  "model": "crownpku/Information-Extraction-Chinese NER_IDCNN_CRF ckpt_IDCNN（MSRA 预训练权重，未再训练）",
+  "data": "D:\\SiSennKoToBa\\week9-10\\contrast3\\msra100.conll",
+  "alignment_rule": "(start, end, label) 完全一致才算 TP；IOBES 预测按 B/E/S 规则还原 span",
+  "sentences": 100,
+  "fields_order_note": "实体类型 = MSRA PER/ORG/LOC",
+  "fields": [
+    {
+      "label": "PER",
+      "support_gold": 55,
+      "predicted": 57,
+      "TP": 52,
+      "FP": 5,
+      "FN": 3,
+      "precision": 0.91228,
+      "recall": 0.94545,
+      "f1": 0.92857
+    },
+    {
+      "label": "ORG",
+      "support_gold": 37,
+      "predicted": 38,
+      "TP": 34,
+      "FP": 4,
+      "FN": 3,
+      "precision": 0.89474,
+      "recall": 0.91892,
+      "f1": 0.90667
+    },
+    {
+      "label": "LOC",
+      "support_gold": 48,
+      "predicted": 48,
+      "TP": 43,
+      "FP": 5,
+      "FN": 5,
+      "precision": 0.89583,
+      "recall": 0.89583,
+      "f1": 0.89583
+    }
+  ],
+  "overall_micro": {
+    "TP": 129,
+    "FP": 14,
+    "FN": 11,
+    "precision": 0.9021,
+    "recall": 0.92143,
+    "f1": 0.91166
+  },
+  "macro_f1": 0.91036,
+  "subsets_nested": {
+    "25": {
+      "fields": [
+        {
+          "label": "PER",
+          "support_gold": 15,
+          "predicted": 15,
+          "TP": 15,
+          "FP": 0,
+          "FN": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        {
+          "label": "ORG",
+          "support_gold": 10,
+          "predicted": 11,
+          "TP": 10,
+          "FP": 1,
+          "FN": 0,
+          "precision": 0.90909,
+          "recall": 1.0,
+          "f1": 0.95238
+        },
+        {
+          "label": "LOC",
+          "support_gold": 13,
+          "predicted": 14,
+          "TP": 13,
+          "FP": 1,
+          "FN": 0,
+          "precision": 0.92857,
+          "recall": 1.0,
+          "f1": 0.96296
+        }
+      ],
+      "overall_micro": {
+        "TP": 38,
+        "FP": 2,
+        "FN": 0,
+        "precision": 0.95,
+        "recall": 1.0,
+        "f1": 0.97436
+      },
+      "macro_f1": 0.97178
+    },
+    "50": {
+      "fields": [
+        {
+          "label": "PER",
+          "support_gold": 20,
+          "predicted": 21,
+          "TP": 20,
+          "FP": 1,
+          "FN": 0,
+          "precision": 0.95238,
+          "recall": 1.0,
+          "f1": 0.97561
+        },
+        {
+          "label": "ORG",
+          "support_gold": 19,
+          "predicted": 19,
+          "TP": 18,
+          "FP": 1,
+          "FN": 1,
+          "precision": 0.94737,
+          "recall": 0.94737,
+          "f1": 0.94737
+        },
+        {
+          "label": "LOC",
+          "support_gold": 21,
+          "predicted": 23,
+          "TP": 20,
+          "FP": 3,
+          "FN": 1,
+          "precision": 0.86957,
+          "recall": 0.95238,
+          "f1": 0.90909
+        }
+      ],
+      "overall_micro": {
+        "TP": 58,
+        "FP": 5,
+        "FN": 2,
+        "precision": 0.92063,
+        "recall": 0.96667,
+        "f1": 0.94309
+      },
+      "macro_f1": 0.94402
+    },
+    "100": {
+      "fields": [
+        {
+          "label": "PER",
+          "support_gold": 55,
+          "predicted": 57,
+          "TP": 52,
+          "FP": 5,
+          "FN": 3,
+          "precision": 0.91228,
+          "recall": 0.94545,
+          "f1": 0.92857
+        },
+        {
+          "label": "ORG",
+          "support_gold": 37,
+          "predicted": 38,
+          "TP": 34,
+          "FP": 4,
+          "FN": 3,
+          "precision": 0.89474,
+          "recall": 0.91892,
+          "f1": 0.90667
+        },
+        {
+          "label": "LOC",
+          "support_gold": 48,
+          "predicted": 48,
+          "TP": 43,
+          "FP": 5,
+          "FN": 5,
+          "precision": 0.89583,
+          "recall": 0.89583,
+          "f1": 0.89583
+        }
+      ],
+      "overall_micro": {
+        "TP": 129,
+        "FP": 14,
+        "FN": 11,
+        "precision": 0.9021,
+        "recall": 0.92143,
+        "f1": 0.91166
+      },
+      "macro_f1": 0.91036
+    }
+  }
+}

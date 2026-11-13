@@ -1,0 +1,311 @@
+{
+  "model": "D:\\SiSennKoToBa\\week9-10\\checkpoint\\uie_jd_v2",
+  "n_texts": 6,
+  "texts": [
+    "招聘高级Java开发工程师，要求本科及以上学历，3年以上工作经验，熟悉Spring Boot和MySQL，具备扎实的后端",
+    "4.AzureMachineLearning机器学习平台开发后端，8年以上工作经验，C++/机器学习/GPU/大数据前端",
+    "在很多人的印象中，智能家居生活是漂浮在空中的，是富人的专享，而我们的愿景就是，通过我们的努力，让这些看似梦幻遥远的生活场",
+    "岗位要求：1.大专及以上学历，优秀应届生亦可考虑2.良好的沟通表达、学习、分析能力3.工作主动性强，有强烈目标感4.对销",
+    "4、公司及自我介绍： 沈阳链家隶属北京链家股份有限公司，是集团的第24个异地分公司，正在大规模的不断扩张，目前已经进驻2",
+    "深圳证券通信公司和不断创新的中国证券市场共同成长，和公司高精尖人才共同进步，引领技术潮流，坚持以人为本，发展优秀人才，建"
+  ],
+  "variants": {
+    "plan_names": {
+      "schema": [
+        "技能",
+        "学历",
+        "经验年限",
+        "岗位名称",
+        "语言能力",
+        "知识领域"
+      ],
+      "total_entities": 33,
+      "by_label": {
+        "技能": 7,
+        "学历": 2,
+        "经验年限": 13,
+        "语言能力": 1,
+        "知识领域": 9,
+        "岗位名称": 1
+      },
+      "seconds": 5.58,
+      "per_text": [
+        {
+          "source": "plan_fixed",
+          "n_entities": 4,
+          "by_label": {
+            "技能": 2,
+            "学历": 1,
+            "经验年限": 1
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 24,
+          "by_label": {
+            "技能": 5,
+            "经验年限": 12,
+            "语言能力": 1,
+            "知识领域": 6
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 0,
+          "by_label": {}
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 4,
+          "by_label": {
+            "学历": 1,
+            "岗位名称": 1,
+            "知识领域": 2
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 0,
+          "by_label": {}
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 1,
+          "by_label": {
+            "知识领域": 1
+          }
+        }
+      ]
+    },
+    "v2_trained": {
+      "schema": [
+        "专业技能",
+        "学历",
+        "经验年限",
+        "招聘职位",
+        "语言能力",
+        "知识领域"
+      ],
+      "total_entities": 34,
+      "by_label": {
+        "专业技能": 6,
+        "学历": 2,
+        "经验年限": 13,
+        "招聘职位": 3,
+        "语言能力": 1,
+        "知识领域": 9
+      },
+      "seconds": 5.51,
+      "per_text": [
+        {
+          "source": "plan_fixed",
+          "n_entities": 5,
+          "by_label": {
+            "专业技能": 2,
+            "学历": 1,
+            "经验年限": 1,
+            "招聘职位": 1
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 23,
+          "by_label": {
+            "专业技能": 4,
+            "经验年限": 12,
+            "语言能力": 1,
+            "知识领域": 6
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 0,
+          "by_label": {}
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 4,
+          "by_label": {
+            "学历": 1,
+            "招聘职位": 1,
+            "知识领域": 2
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 1,
+          "by_label": {
+            "招聘职位": 1
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 1,
+          "by_label": {
+            "知识领域": 1
+          }
+        }
+      ]
+    },
+    "union_both": {
+      "schema": [
+        "技能",
+        "专业技能",
+        "学历",
+        "经验年限",
+        "岗位名称",
+        "招聘职位",
+        "语言能力",
+        "知识领域"
+      ],
+      "total_entities": 42,
+      "by_label": {
+        "技能": 7,
+        "专业技能": 6,
+        "学历": 2,
+        "经验年限": 13,
+        "招聘职位": 3,
+        "语言能力": 1,
+        "知识领域": 9,
+        "岗位名称": 1
+      },
+      "seconds": 7.26,
+      "per_text": [
+        {
+          "source": "plan_fixed",
+          "n_entities": 7,
+          "by_label": {
+            "技能": 2,
+            "专业技能": 2,
+            "学历": 1,
+            "经验年限": 1,
+            "招聘职位": 1
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 28,
+          "by_label": {
+            "技能": 5,
+            "专业技能": 4,
+            "经验年限": 12,
+            "语言能力": 1,
+            "知识领域": 6
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 0,
+          "by_label": {}
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 5,
+          "by_label": {
+            "学历": 1,
+            "岗位名称": 1,
+            "招聘职位": 1,
+            "知识领域": 2
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 1,
+          "by_label": {
+            "招聘职位": 1
+          }
+        },
+        {
+          "source": "reserve_week8",
+          "n_entities": 1,
+          "by_label": {
+            "知识领域": 1
+          }
+        }
+      ]
+    }
+  },
+  "relation_variants": {
+    "rel_岗位名称": {
+      "schema": {
+        "岗位名称": [
+          "技能",
+          "学历",
+          "经验"
+        ]
+      },
+      "n_relations": 1,
+      "seconds": 1.42,
+      "samples": [
+        {
+          "subject": "对销售",
+          "relations": {
+            "学历": [
+              {
+                "text": "大专",
+                "start": 7,
+                "end": 9,
+                "probability": 0.9989138812043876
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "rel_招聘职位": {
+      "schema": {
+        "招聘职位": [
+          "技能",
+          "学历",
+          "经验"
+        ]
+      },
+      "n_relations": 4,
+      "seconds": 2.31,
+      "samples": [
+        {
+          "subject": "高级Java开发工程师",
+          "relations": {
+            "技能": [
+              {
+                "text": "后端开发能力",
+                "start": 58,
+                "end": 64,
+                "probability": 0.7317309278990365
+              }
+            ],
+            "学历": [
+              {
+                "text": "本科",
+                "start": 16,
+                "end": 18,
+                "probability": 0.9957087287808832
+              }
+            ],
+            "经验": [
+              {
+                "text": "3年以上",
+                "start": 24,
+                "end": 28,
+                "probability": 0.9880751598543895
+              }
+            ]
+          }
+        },
+        {
+          "subject": "对销售",
+          "relations": {
+            "学历": [
+              {
+                "text": "大专",
+                "start": 7,
+                "end": 9,
+                "probability": 0.9989138812043876
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

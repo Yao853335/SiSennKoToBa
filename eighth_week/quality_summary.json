@@ -1,0 +1,19 @@
+{
+  "covered_tasks": 600,
+  "empty_annotation_tasks": 160,
+  "span_count": 2332,
+  "label_counts": {
+    "技能": 1144,
+    "学历": 84,
+    "经验年限": 130,
+    "岗位名称": 178,
+    "语言能力": 46,
+    "知识领域": 750
+  },
+  "boundary_errors": 0,
+  "overlap_errors": 0,
+  "duplicate_errors": 0,
+  "invalid_label_errors": 0,
+  "algorithmic_review_sample": 120,
+  "human_reviewed": false
+}

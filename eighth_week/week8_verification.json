@@ -1,0 +1,58 @@
+{
+  "format_check": "OK",
+  "corpus": {
+    "active": 600,
+    "reserve": 100,
+    "length_buckets": {
+      "long": 180,
+      "short": 180,
+      "medium": 240
+    },
+    "source_domains": {
+      "应届生招聘": 300,
+      "人工智能招聘": 300
+    }
+  },
+  "msra": {
+    "sentences": 50,
+    "entities": 108
+  },
+  "preannotations": {
+    "tasks": 600,
+    "spans": 398,
+    "labels": {
+      "学历": 71,
+      "知识领域": 203,
+      "经验年限": 52,
+      "技能": 52,
+      "岗位名称": 12,
+      "语言能力": 8
+    }
+  },
+  "labels": {
+    "tasks": 600,
+    "empty_tasks": 160,
+    "spans": 2332,
+    "labels": {
+      "技能": 1144,
+      "学历": 84,
+      "经验年限": 130,
+      "岗位名称": 178,
+      "语言能力": 46,
+      "知识领域": 750
+    }
+  },
+  "splits": {
+    "split_sizes": {
+      "train": 480,
+      "dev": 60,
+      "test": 60
+    },
+    "selected_split_seed": 42,
+    "generated_examples": {
+      "train": 2880,
+      "dev": 360,
+      "test": 360
+    }
+  }
+}

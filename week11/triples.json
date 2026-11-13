@@ -1,0 +1,2765 @@
+{
+  "meta": {
+    "schema": {
+      "岗位名称": [
+        "技能",
+        "学历",
+        "经验"
+      ],
+      "技能": [
+        "关联岗位"
+      ]
+    },
+    "model": "week9-10/checkpoint/uie_jd_v2",
+    "n_texts": 700,
+    "n_texts_with_relation": 43,
+    "raw_relation_mentions": 220,
+    "raw_cooccur_mentions": 137,
+    "dedup_relation_triples": 205,
+    "dedup_cooccur_triples": 137,
+    "predicate_counts": {
+      "经验": 16,
+      "学历": 89,
+      "技能": 86,
+      "关联岗位": 29
+    }
+  },
+  "triples": [
+    {
+      "subject": "店员销售",
+      "predicate": "经验",
+      "object": "0基础",
+      "weight": 1,
+      "max_prob": 0.4214,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "地推销售",
+      "predicate": "经验",
+      "object": "1年以上",
+      "weight": 1,
+      "max_prob": 0.9957,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "对销售",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9989,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "销售",
+      "predicate": "技能",
+      "object": "维护",
+      "weight": 1,
+      "max_prob": 0.6684,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "销售",
+      "predicate": "技能",
+      "object": "提高流量",
+      "weight": 1,
+      "max_prob": 0.6783,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "维护",
+      "predicate": "关联岗位",
+      "object": "销售",
+      "weight": 1,
+      "max_prob": 0.2966,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "知识产权顾问",
+      "predicate": "技能",
+      "object": "入职培训",
+      "weight": 1,
+      "max_prob": 0.638,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "知识产权顾问",
+      "predicate": "技能",
+      "object": "销售",
+      "weight": 1,
+      "max_prob": 0.6097,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "知识产权顾问",
+      "predicate": "经验",
+      "object": "入职培训",
+      "weight": 1,
+      "max_prob": 0.7201,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "市场部团队经理",
+      "predicate": "技能",
+      "object": "销售",
+      "weight": 1,
+      "max_prob": 0.3135,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "市场部团队经理",
+      "predicate": "技能",
+      "object": "入职培训",
+      "weight": 1,
+      "max_prob": 0.576,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "市场部团队经理",
+      "predicate": "经验",
+      "object": "入职培训",
+      "weight": 1,
+      "max_prob": 0.5878,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "维系现有",
+      "predicate": "关联岗位",
+      "object": "客户",
+      "weight": 1,
+      "max_prob": 0.3021,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "经理助理",
+      "predicate": "技能",
+      "object": "指导",
+      "weight": 1,
+      "max_prob": 0.3669,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "经理助理",
+      "predicate": "学历",
+      "object": "中专",
+      "weight": 1,
+      "max_prob": 0.9967,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "电气工程师",
+      "predicate": "学历",
+      "object": "中专",
+      "weight": 1,
+      "max_prob": 0.9941,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "销售主管",
+      "predicate": "技能",
+      "object": "开发新",
+      "weight": 1,
+      "max_prob": 0.7011,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "销售主管",
+      "predicate": "经验",
+      "object": "专业培训",
+      "weight": 1,
+      "max_prob": 0.294,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "销售总监",
+      "predicate": "技能",
+      "object": "开发新",
+      "weight": 1,
+      "max_prob": 0.6522,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "开发新",
+      "predicate": "关联岗位",
+      "object": "客户",
+      "weight": 1,
+      "max_prob": 0.5056,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "节目精剪",
+      "weight": 1,
+      "max_prob": 0.4253,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "拓展",
+      "weight": 1,
+      "max_prob": 0.3464,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "堪景",
+      "weight": 1,
+      "max_prob": 0.5224,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "撰稿",
+      "weight": 1,
+      "max_prob": 0.4201,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "拍摄",
+      "weight": 1,
+      "max_prob": 0.7303,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "分镜",
+      "weight": 1,
+      "max_prob": 0.3504,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "拍摄现场协助摄像导演",
+      "weight": 1,
+      "max_prob": 0.6153,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "后期剪辑",
+      "weight": 1,
+      "max_prob": 0.4409,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "技能",
+      "object": "选题",
+      "weight": 1,
+      "max_prob": 0.6291,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "拓展",
+      "predicate": "关联岗位",
+      "object": "摄像助理",
+      "weight": 1,
+      "max_prob": 0.4641,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "策划案撰写",
+      "predicate": "关联岗位",
+      "object": "导演",
+      "weight": 1,
+      "max_prob": 0.3684,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "专家",
+      "predicate": "技能",
+      "object": "沙盘游戏",
+      "weight": 1,
+      "max_prob": 0.66,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "专家",
+      "predicate": "技能",
+      "object": "潜能训练",
+      "weight": 1,
+      "max_prob": 0.6456,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "专家",
+      "predicate": "技能",
+      "object": "提供三维学习力训练",
+      "weight": 1,
+      "max_prob": 0.5248,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "专家",
+      "predicate": "技能",
+      "object": "照相识字",
+      "weight": 1,
+      "max_prob": 0.6043,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "专家",
+      "predicate": "技能",
+      "object": "感觉统合训练",
+      "weight": 1,
+      "max_prob": 0.5434,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "专家",
+      "predicate": "技能",
+      "object": "体智能",
+      "weight": 1,
+      "max_prob": 0.4133,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "客服专员",
+      "predicate": "技能",
+      "object": "来电咨询",
+      "weight": 1,
+      "max_prob": 0.5372,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "客服专员",
+      "predicate": "技能",
+      "object": "在线咨询",
+      "weight": 1,
+      "max_prob": 0.3666,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "宝妈岗",
+      "predicate": "技能",
+      "object": "确定客户",
+      "weight": 1,
+      "max_prob": 0.5088,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "宝妈岗",
+      "predicate": "技能",
+      "object": "陪同客户看房",
+      "weight": 1,
+      "max_prob": 0.5584,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "宝妈岗",
+      "predicate": "技能",
+      "object": "维护新增房源",
+      "weight": 1,
+      "max_prob": 0.5732,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "陪同客户看房",
+      "predicate": "关联岗位",
+      "object": "宝妈岗",
+      "weight": 1,
+      "max_prob": 0.8827,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "确定客户意向",
+      "predicate": "关联岗位",
+      "object": "宝妈岗",
+      "weight": 1,
+      "max_prob": 0.8067,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "开发与承揽",
+      "predicate": "关联岗位",
+      "object": "财务顾问",
+      "weight": 1,
+      "max_prob": 0.493,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "非电话销售",
+      "predicate": "技能",
+      "object": "开发与需求引导",
+      "weight": 1,
+      "max_prob": 0.7474,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "产品经理",
+      "predicate": "技能",
+      "object": "定义产品",
+      "weight": 1,
+      "max_prob": 0.6032,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "定义产品",
+      "predicate": "关联岗位",
+      "object": "研发",
+      "weight": 1,
+      "max_prob": 0.7969,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "客户回访",
+      "predicate": "关联岗位",
+      "object": "企业",
+      "weight": 1,
+      "max_prob": 0.561,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "客户回访",
+      "predicate": "关联岗位",
+      "object": "政府",
+      "weight": 1,
+      "max_prob": 0.5202,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "技能",
+      "object": "汇总整理",
+      "weight": 1,
+      "max_prob": 0.5876,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "技能",
+      "object": "做好记录",
+      "weight": 1,
+      "max_prob": 0.7959,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "技能",
+      "object": "录入系统",
+      "weight": 1,
+      "max_prob": 0.5239,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "技能",
+      "object": "客户分析",
+      "weight": 1,
+      "max_prob": 0.687,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "技能",
+      "object": "解答客户",
+      "weight": 1,
+      "max_prob": 0.7338,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "技能",
+      "object": "熟练操作办公软件",
+      "weight": 1,
+      "max_prob": 0.3956,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9982,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "技能",
+      "object": "客户分析",
+      "weight": 1,
+      "max_prob": 0.6924,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "技能",
+      "object": "汇总整理",
+      "weight": 1,
+      "max_prob": 0.5314,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "技能",
+      "object": "解答客户",
+      "weight": 1,
+      "max_prob": 0.7296,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "技能",
+      "object": "做好记录",
+      "weight": 1,
+      "max_prob": 0.78,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "技能",
+      "object": "熟练操作办公软件",
+      "weight": 1,
+      "max_prob": 0.4811,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "技能",
+      "object": "录入系统",
+      "weight": 1,
+      "max_prob": 0.4242,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9967,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "青岛市物联网专家",
+      "predicate": "学历",
+      "object": "博士后",
+      "weight": 1,
+      "max_prob": 0.9898,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "技能",
+      "object": "协调工作",
+      "weight": 1,
+      "max_prob": 0.4673,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "技能",
+      "object": "销售参与",
+      "weight": 1,
+      "max_prob": 0.3972,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "技能",
+      "object": "统筹运营",
+      "weight": 1,
+      "max_prob": 0.3461,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "活动商品选择",
+      "predicate": "关联岗位",
+      "object": "商品组织",
+      "weight": 1,
+      "max_prob": 0.3146,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "定价",
+      "predicate": "关联岗位",
+      "object": "商品组织",
+      "weight": 1,
+      "max_prob": 0.7527,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "设定活动目标",
+      "predicate": "关联岗位",
+      "object": "商品组织",
+      "weight": 1,
+      "max_prob": 0.6802,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "设备维修工程师",
+      "predicate": "技能",
+      "object": "机电工务",
+      "weight": 1,
+      "max_prob": 0.4529,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "设备维修工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9962,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "设备维修工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9929,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "设备维修工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9915,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "质量工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 2,
+      "max_prob": 0.9968,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "质量工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 2,
+      "max_prob": 0.9971,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "质量工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 2,
+      "max_prob": 0.9931,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "表面处理工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 2,
+      "max_prob": 0.9972,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "表面处理工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 2,
+      "max_prob": 0.9948,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "表面处理工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 2,
+      "max_prob": 0.9637,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "项目管理工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 2,
+      "max_prob": 0.9953,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "项目管理工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 2,
+      "max_prob": 0.9979,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "项目管理工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 2,
+      "max_prob": 0.9974,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "精密量测工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 2,
+      "max_prob": 0.995,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "精密量测工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 2,
+      "max_prob": 0.9946,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "精密量测工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 2,
+      "max_prob": 0.9975,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "供应商管理工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9976,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "供应商管理工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9921,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "供应商管理工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9956,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "产品开发工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 2,
+      "max_prob": 0.9946,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "产品开发工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 2,
+      "max_prob": 0.9972,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "产品开发工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 2,
+      "max_prob": 0.9919,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "采购工程师",
+      "predicate": "技能",
+      "object": "生产企划管理",
+      "weight": 1,
+      "max_prob": 0.3941,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "采购工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.986,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "采购工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9924,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "采购工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9775,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "质量管理工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.998,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "质量管理工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.996,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "质量管理工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9943,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "产品治具开发工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9884,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "产品治具开发工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9938,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "产品治具开发工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9973,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "交货管制工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9965,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "交货管制工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9819,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "交货管制工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9953,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "制程开发工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9972,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "制程开发工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9971,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "制程开发工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9943,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "自动化工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9972,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "自动化工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9954,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "自动化工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9964,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "环境工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9969,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "环境工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9932,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "环境工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9963,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9981,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9956,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9988,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "IE工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.7238,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "IE工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.7892,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "IE工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.7941,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "关务工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9536,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "关务工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9635,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "关务工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9848,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "生产企划工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.9929,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "生产企划工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9956,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "生产企划工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9703,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "IT软件开发工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.8802,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "IT软件开发工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.8083,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "IT软件开发工程师",
+      "predicate": "学历",
+      "object": "硕士",
+      "weight": 1,
+      "max_prob": 0.8985,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "技能",
+      "object": "ERP系统日常运行维护",
+      "weight": 1,
+      "max_prob": 0.6832,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "技能",
+      "object": "新品建立与库存管理",
+      "weight": 1,
+      "max_prob": 0.5116,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "技能",
+      "object": "更新数据",
+      "weight": 1,
+      "max_prob": 0.5959,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "技能",
+      "object": "ERP新品匹配与管理",
+      "weight": 1,
+      "max_prob": 0.4121,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "技能",
+      "object": "整理及分析",
+      "weight": 1,
+      "max_prob": 0.4766,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "根据公司省教学总监",
+      "predicate": "技能",
+      "object": "实施教学计划",
+      "weight": 1,
+      "max_prob": 0.8384,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "根据公司省教学总监",
+      "predicate": "学历",
+      "object": "高中",
+      "weight": 1,
+      "max_prob": 0.7559,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "根据公司教学总监",
+      "predicate": "技能",
+      "object": "实施教学计划",
+      "weight": 1,
+      "max_prob": 0.7636,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "根据公司教学总监",
+      "predicate": "学历",
+      "object": "高中",
+      "weight": 1,
+      "max_prob": 0.8453,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "实施教学计划",
+      "predicate": "关联岗位",
+      "object": "根据公司教学总监",
+      "weight": 1,
+      "max_prob": 0.5358,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "百万顾问",
+      "predicate": "技能",
+      "object": "猎头培训",
+      "weight": 1,
+      "max_prob": 0.7775,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "百万顾问",
+      "predicate": "技能",
+      "object": "管理的候选人",
+      "weight": 1,
+      "max_prob": 0.396,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "行业资深顾问",
+      "predicate": "技能",
+      "object": "猎头培训",
+      "weight": 1,
+      "max_prob": 0.8851,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "行业资深顾问",
+      "predicate": "技能",
+      "object": "管理的候选人",
+      "weight": 1,
+      "max_prob": 0.351,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "行业资深顾问",
+      "predicate": "经验",
+      "object": "猎头培训",
+      "weight": 1,
+      "max_prob": 0.5173,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "行业资深顾问",
+      "predicate": "经验",
+      "object": "定期分享",
+      "weight": 1,
+      "max_prob": 0.3325,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "猎头培训",
+      "predicate": "关联岗位",
+      "object": "行业资深顾问",
+      "weight": 1,
+      "max_prob": 0.4357,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "管理的候选人",
+      "predicate": "关联岗位",
+      "object": "行业资深顾问",
+      "weight": 1,
+      "max_prob": 0.4616,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "入职培训",
+      "predicate": "关联岗位",
+      "object": "行业资深顾问",
+      "weight": 1,
+      "max_prob": 0.3307,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与算法测试工程师",
+      "predicate": "技能",
+      "object": "完成任务",
+      "weight": 1,
+      "max_prob": 0.6667,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "会计",
+      "predicate": "技能",
+      "object": "独立做账",
+      "weight": 1,
+      "max_prob": 0.6706,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "数据挖掘专家",
+      "predicate": "技能",
+      "object": "智能产品研发",
+      "weight": 1,
+      "max_prob": 0.5259,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "智能产品研发",
+      "predicate": "关联岗位",
+      "object": "数据挖掘专家",
+      "weight": 1,
+      "max_prob": 0.3621,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "初级优化工程师",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9983,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "安全开发工程师",
+      "predicate": "技能",
+      "object": "安全功能开发",
+      "weight": 1,
+      "max_prob": 0.8513,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "安全开发工程师",
+      "predicate": "技能",
+      "object": "Java或Scala语言",
+      "weight": 1,
+      "max_prob": 0.8248,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "安全开发工程师",
+      "predicate": "技能",
+      "object": "身份认证和权限管理开发",
+      "weight": 1,
+      "max_prob": 0.4636,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "安全开发工程师",
+      "predicate": "经验",
+      "object": "权限管理",
+      "weight": 1,
+      "max_prob": 0.4741,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "会议销售专员",
+      "predicate": "技能",
+      "object": "说服决策者",
+      "weight": 1,
+      "max_prob": 0.3887,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "会议销售专员",
+      "predicate": "技能",
+      "object": "改善项目",
+      "weight": 1,
+      "max_prob": 0.8282,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "会议销售专员",
+      "predicate": "经验",
+      "object": "改善项目",
+      "weight": 1,
+      "max_prob": 0.3349,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "银行核心系统Java开发工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9983,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "银行核心系统Java开发工程师",
+      "predicate": "经验",
+      "object": "三年以上",
+      "weight": 1,
+      "max_prob": 0.9957,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "技能",
+      "object": "收集市场信息",
+      "weight": 1,
+      "max_prob": 0.4591,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "技能",
+      "object": "诊断经营问题",
+      "weight": 1,
+      "max_prob": 0.3831,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "技能",
+      "object": "美容师培训与指导",
+      "weight": 1,
+      "max_prob": 0.3761,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "技能",
+      "object": "品牌及品牌文化传播",
+      "weight": 1,
+      "max_prob": 0.3486,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "技能",
+      "object": "排毒营的工作及安排",
+      "weight": 1,
+      "max_prob": 0.6608,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "加盟店的关系管理",
+      "predicate": "关联岗位",
+      "object": "分公司经理",
+      "weight": 1,
+      "max_prob": 0.4437,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "执行公司",
+      "predicate": "关联岗位",
+      "object": "商户拓展策略",
+      "weight": 1,
+      "max_prob": 0.3501,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "市场销售",
+      "predicate": "学历",
+      "object": "管理培训生",
+      "weight": 1,
+      "max_prob": 0.775,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "市场销售",
+      "predicate": "经验",
+      "object": "两年",
+      "weight": 1,
+      "max_prob": 0.7192,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "管理培训生",
+      "predicate": "技能",
+      "object": "研发",
+      "weight": 1,
+      "max_prob": 0.4175,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "管理培训生",
+      "predicate": "技能",
+      "object": "系统培养",
+      "weight": 1,
+      "max_prob": 0.4292,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "管理培训生",
+      "predicate": "经验",
+      "object": "两年",
+      "weight": 1,
+      "max_prob": 0.4659,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "管理培训生",
+      "predicate": "经验",
+      "object": "研发",
+      "weight": 1,
+      "max_prob": 0.381,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "研发",
+      "predicate": "关联岗位",
+      "object": "管理培训生",
+      "weight": 1,
+      "max_prob": 0.3295,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "研发",
+      "predicate": "关联岗位",
+      "object": "市场销售",
+      "weight": 1,
+      "max_prob": 0.5639,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "系统培养",
+      "predicate": "关联岗位",
+      "object": "市场销售一线的轮岗及培养，培养优秀的产品经理",
+      "weight": 1,
+      "max_prob": 0.293,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "分公司总经理",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9905,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "大区总监",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9873,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "商圈经理",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.99,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "店经理",
+      "predicate": "学历",
+      "object": "大专",
+      "weight": 1,
+      "max_prob": 0.9955,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "一一安检",
+      "predicate": "技能",
+      "object": "熟练掌握手检",
+      "weight": 1,
+      "max_prob": 0.3216,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "愿交各位销售",
+      "predicate": "经验",
+      "object": "交流",
+      "weight": 1,
+      "max_prob": 0.8313,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "大数据分析研究",
+      "predicate": "关联岗位",
+      "object": "高等教育人才培养与就业",
+      "weight": 1,
+      "max_prob": 0.7339,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "提供解决方案",
+      "predicate": "关联岗位",
+      "object": "全国数百所高校",
+      "weight": 1,
+      "max_prob": 0.7856,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "提供解决方案",
+      "predicate": "关联岗位",
+      "object": "高等教育人才培养与就业",
+      "weight": 1,
+      "max_prob": 0.3742,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "年度销售",
+      "predicate": "技能",
+      "object": "客户接待",
+      "weight": 1,
+      "max_prob": 0.4695,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "年度销售",
+      "predicate": "技能",
+      "object": "咨询工作，为客户提供专业的房地产职业咨询服务",
+      "weight": 1,
+      "max_prob": 0.3731,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "技能",
+      "object": "数据应用开发",
+      "weight": 1,
+      "max_prob": 0.5179,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "数据应用开发",
+      "predicate": "关联岗位",
+      "object": "数据产品经理",
+      "weight": 1,
+      "max_prob": 0.4643,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "对接沟通",
+      "predicate": "关联岗位",
+      "object": "业务系统研发团队和各业务部门",
+      "weight": 1,
+      "max_prob": 0.5465,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "销售储备干部/置业顾问",
+      "predicate": "技能",
+      "object": "房产信息维护推广",
+      "weight": 1,
+      "max_prob": 0.5226,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "销售储备干部/置业顾问",
+      "predicate": "技能",
+      "object": "深度使用APP",
+      "weight": 1,
+      "max_prob": 0.4594,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "销售储备干部/置业顾问",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.9929,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "技能",
+      "object": "Bug的发现与解决",
+      "weight": 1,
+      "max_prob": 0.7332,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "技能",
+      "object": "嵌入式软件的编程",
+      "weight": 1,
+      "max_prob": 0.6241,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "技能",
+      "object": "嵌入式平台开发",
+      "weight": 1,
+      "max_prob": 0.7831,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "技能",
+      "object": "嵌入式Linux编程",
+      "weight": 1,
+      "max_prob": 0.3386,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "技能",
+      "object": "位MCU项目开发调试",
+      "weight": 1,
+      "max_prob": 0.4561,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "学历",
+      "object": "本科",
+      "weight": 1,
+      "max_prob": 0.998,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "经验",
+      "object": "配合",
+      "weight": 1,
+      "max_prob": 0.4845,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "经验",
+      "object": "2年以上",
+      "weight": 1,
+      "max_prob": 0.8687,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "接受应届实习生",
+      "predicate": "技能",
+      "object": "收集客户",
+      "weight": 1,
+      "max_prob": 0.5065,
+      "source": "uie_relation"
+    },
+    {
+      "subject": "店员销售",
+      "predicate": "共现技能",
+      "object": "电销",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "销售",
+      "predicate": "共现技能",
+      "object": "维护",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "销售",
+      "predicate": "共现技能",
+      "object": "推广",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "销售",
+      "predicate": "共现技能",
+      "object": "提高流量",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "市场部团队经理",
+      "predicate": "共现技能",
+      "object": "入职培训",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "知识产权顾问",
+      "predicate": "共现技能",
+      "object": "入职培训",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "银行金融服务专员",
+      "predicate": "共现技能",
+      "object": "实时解决方案",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "热爱销售",
+      "predicate": "共现技能",
+      "object": "拓展人脉",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "销售总监",
+      "predicate": "共现技能",
+      "object": "开发新",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "销售主管",
+      "predicate": "共现技能",
+      "object": "开发新",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "撰稿",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "预告片",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "后期剪辑",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "策划案撰写",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "选题",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "详细拍摄方案",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "播完11",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "堪景",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "片头片尾策划",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "对接嘉宾",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "脚本",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "现场统筹",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "拓展",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "筹备",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "上线播出",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "采访稿",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "拍摄",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "精剪",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "粗剪",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "分镜",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "摄像助理",
+      "predicate": "共现技能",
+      "object": "宣推",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "专家",
+      "predicate": "共现技能",
+      "object": "三维学习力训练",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "专家",
+      "predicate": "共现技能",
+      "object": "体智能",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "专家",
+      "predicate": "共现技能",
+      "object": "沙盘游戏",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "专家",
+      "predicate": "共现技能",
+      "object": "照相识字",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "专家",
+      "predicate": "共现技能",
+      "object": "潜能训练",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "专家",
+      "predicate": "共现技能",
+      "object": "感觉统合训练",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "客服专员",
+      "predicate": "共现技能",
+      "object": "来电咨询",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "客服专员",
+      "predicate": "共现技能",
+      "object": "在线咨询",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "宝妈岗",
+      "predicate": "共现技能",
+      "object": "陪同客户看房",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "宝妈岗",
+      "predicate": "共现技能",
+      "object": "确定客户意向",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "宝妈岗",
+      "predicate": "共现技能",
+      "object": "维护公司内部房源数据，按照公司的流程完成内部系统房源数据的维护",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "非电话销售",
+      "predicate": "共现技能",
+      "object": "开发与需求引导",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "增加产品销售",
+      "predicate": "共现技能",
+      "object": "发展新",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "增加产品销售",
+      "predicate": "共现技能",
+      "object": "开拓新",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "产品经理",
+      "predicate": "共现技能",
+      "object": "定义产品",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "产品经理",
+      "predicate": "共现技能",
+      "object": "研发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "共现技能",
+      "object": "汇总整理",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "共现技能",
+      "object": "熟练操作办公软件",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "共现技能",
+      "object": "客户分析",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "共现技能",
+      "object": "记录",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "共现技能",
+      "object": "录入系统",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "电话销售",
+      "predicate": "共现技能",
+      "object": "解答客户",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "共现技能",
+      "object": "汇总整理",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "共现技能",
+      "object": "熟练操作办公软件",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "共现技能",
+      "object": "客户分析",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "共现技能",
+      "object": "记录",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "共现技能",
+      "object": "录入系统",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "喜欢销售",
+      "predicate": "共现技能",
+      "object": "解答客户",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "青岛市物联网专家",
+      "predicate": "共现技能",
+      "object": "运营及推广",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "需找供应商",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "协调运营策略的调整",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "把控品牌调性",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "收集和整理",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "定价",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "协调工作个人条件：1、能够熟练操作办公软件",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "跟进生产部门到货进度",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "丰富店铺产品线",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "跟进新品的销售",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "设定活动目标",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "满足上新及销售",
+      "predicate": "共现技能",
+      "object": "活动商品选择",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "共现技能",
+      "object": "ERP系统日常运行维护",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "共现技能",
+      "object": "整理及分析",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "共现技能",
+      "object": "ERP新品匹配与管理",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "共现技能",
+      "object": "更新数据",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "用友专家",
+      "predicate": "共现技能",
+      "object": "新品建立与库存",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "根据市场销售",
+      "predicate": "共现技能",
+      "object": "新产品开发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "根据公司省教学总监",
+      "predicate": "共现技能",
+      "object": "实施教学计划",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "根据公司教学总监",
+      "predicate": "共现技能",
+      "object": "实施教学计划",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "行业资深顾问",
+      "predicate": "共现技能",
+      "object": "管理的候选人",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "行业资深顾问",
+      "predicate": "共现技能",
+      "object": "入职培训",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "行业资深顾问",
+      "predicate": "共现技能",
+      "object": "猎头培训",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "百万顾问",
+      "predicate": "共现技能",
+      "object": "管理的候选人",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "百万顾问",
+      "predicate": "共现技能",
+      "object": "入职培训",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "百万顾问",
+      "predicate": "共现技能",
+      "object": "猎头培训",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与算法测试工程师",
+      "predicate": "共现技能",
+      "object": "完成任务",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "会计",
+      "predicate": "共现技能",
+      "object": "独立做账",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "会计",
+      "predicate": "共现技能",
+      "object": "监控应收的准确性",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "数据挖掘专家",
+      "predicate": "共现技能",
+      "object": "智能产品研发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "安全开发工程师",
+      "predicate": "共现技能",
+      "object": "安全功能开发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "安全开发工程师",
+      "predicate": "共现技能",
+      "object": "Java或Scala语言",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "安全开发工程师",
+      "predicate": "共现技能",
+      "object": "身份认证和权限管理",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "会议销售专员",
+      "predicate": "共现技能",
+      "object": "改善项目",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "会议销售专员",
+      "predicate": "共现技能",
+      "object": "说服决策者",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "共现技能",
+      "object": "收集市场信息",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "共现技能",
+      "object": "品牌及品牌文化传播",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "共现技能",
+      "object": "终端会",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "共现技能",
+      "object": "加盟店的关系管理",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "共现技能",
+      "object": "排毒营的工作及安排",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "共现技能",
+      "object": "培训与指导",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "分公司经理",
+      "predicate": "共现技能",
+      "object": "促销活动等福利1、免费接受商学院的提升培训",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "市场销售",
+      "predicate": "共现技能",
+      "object": "研发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "市场销售",
+      "predicate": "共现技能",
+      "object": "系统培养",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "管理培训生",
+      "predicate": "共现技能",
+      "object": "研发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "管理培训生",
+      "predicate": "共现技能",
+      "object": "系统培养",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "一一安检",
+      "predicate": "共现技能",
+      "object": "熟练掌握手检",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "所有团队主管",
+      "predicate": "共现技能",
+      "object": "组建一个",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "普工",
+      "predicate": "共现技能",
+      "object": "铣工",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "普工",
+      "predicate": "共现技能",
+      "object": "磨床",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "普工",
+      "predicate": "共现技能",
+      "object": "焊工",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "普工",
+      "predicate": "共现技能",
+      "object": "钳工",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "年度销售",
+      "predicate": "共现技能",
+      "object": "客户接待",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "共现技能",
+      "object": "数据应用开发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "共现技能",
+      "object": "数据仓库",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "共现技能",
+      "object": "Linux操作系统",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "共现技能",
+      "object": "数据结构和算法设计有",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "共现技能",
+      "object": "shell编程有",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "共现技能",
+      "object": "大数据产品研发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "共现技能",
+      "object": "ETL开发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "配合数据产品经理",
+      "predicate": "共现技能",
+      "object": "Python或Scala语言之一",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "销售储备干部/置业顾问",
+      "predicate": "共现技能",
+      "object": "深度使用APP",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "达成销售",
+      "predicate": "共现技能",
+      "object": "聊天工具发展目标",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "达成销售",
+      "predicate": "共现技能",
+      "object": "维护与客户之间",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "达成销售",
+      "predicate": "共现技能",
+      "object": "挖掘客户潜力，并对客户提供必要的咨询和协助服务",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "达成销售",
+      "predicate": "共现技能",
+      "object": "寻找客户",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "C",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "嵌入式Linux编程",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "C++",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "Bug的发现与解决",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "嵌入式平台开发",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "嵌入式代码的维护与更新",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "嵌入式软件的编程",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "MFC",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "软件开发流程",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "位单片机",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "位MCU项目开发调试",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    },
+    {
+      "subject": "与硬件工程师",
+      "predicate": "共现技能",
+      "object": "Free-RTOS",
+      "weight": 1,
+      "max_prob": null,
+      "source": "cooccur"
+    }
+  ]
+}

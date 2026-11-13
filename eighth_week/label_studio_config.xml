@@ -1,0 +1,11 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Labels name="label" toName="text">
+    <Label value="技能" background="#166534"/>
+    <Label value="学历" background="#1D4ED8"/>
+    <Label value="经验年限" background="#7C3AED"/>
+    <Label value="岗位名称" background="#B45309"/>
+    <Label value="语言能力" background="#BE123C"/>
+    <Label value="知识领域" background="#0F766E"/>
+  </Labels>
+</View>

@@ -1,0 +1,13 @@
+﻿{
+    "python":  "3.8.0",
+    "pythonImplementation":  "3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)]",
+    "paddle":  "2.6.2",
+    "paddlenlp":  "2.6.1",
+    "paddleNlpCommit":  "fd2bed541ff929f6f8b350001694e553b29d4e9a",
+    "paddleNlpSourceTag":  "v2.6.1",
+    "traditionalRepoSource":  "GitHub master ZIP",
+    "traditionalRepoUrl":  "https://github.com/crownpku/Information-Extraction-Chinese",
+    "modelCache":  "D:\\SiSennKoToBa\\.cache\\paddlenlp",
+    "modelCacheBytes":  941593657,
+    "generatedAt":  "2026-10-18 19:00:14 +08:00"
+}

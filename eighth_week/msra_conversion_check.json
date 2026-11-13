@@ -1,0 +1,1167 @@
+{
+  "task": "msra_bio_to_labelstudio_validation",
+  "input": "D:\\SiSennKoToBa\\eighth_week\\source\\msra_train_bio.txt",
+  "parsed_sentences": 45000,
+  "sample_sentences": 50,
+  "entity_count": 108,
+  "result_count": 108,
+  "all_offsets_valid": true,
+  "all_counts_match": true,
+  "offset_unit": "Python Unicode code point, zero-based, end-exclusive",
+  "first_task": {
+    "data": {
+      "text": "因有关日寇在京掠夺文物详情，藏界较为重视，也是我们收藏北京史料中的要件之一。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 3,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 4,
+              "text": "日",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 7,
+              "text": "京",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 27,
+              "end": 29,
+              "text": "北京",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "checks": [
+    {
+      "source_sentence_index": 3,
+      "text_length": 38,
+      "bio_entity_count": 3,
+      "converted_result_count": 3,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 3,
+          "end": 4,
+          "label": "LOC",
+          "text": "日"
+        },
+        {
+          "start": 6,
+          "end": 7,
+          "label": "LOC",
+          "text": "京"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "label": "LOC",
+          "text": "北京"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 4,
+      "text_length": 99,
+      "bio_entity_count": 8,
+      "converted_result_count": 8,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 17,
+          "end": 19,
+          "label": "LOC",
+          "text": "北京"
+        },
+        {
+          "start": 40,
+          "end": 42,
+          "label": "LOC",
+          "text": "故宫"
+        },
+        {
+          "start": 43,
+          "end": 45,
+          "label": "LOC",
+          "text": "历博"
+        },
+        {
+          "start": 46,
+          "end": 49,
+          "label": "ORG",
+          "text": "古研所"
+        },
+        {
+          "start": 50,
+          "end": 57,
+          "label": "LOC",
+          "text": "北大清华图书馆"
+        },
+        {
+          "start": 58,
+          "end": 60,
+          "label": "LOC",
+          "text": "北图"
+        },
+        {
+          "start": 61,
+          "end": 62,
+          "label": "LOC",
+          "text": "日"
+        },
+        {
+          "start": 94,
+          "end": 96,
+          "label": "LOC",
+          "text": "北京"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 6,
+      "text_length": 59,
+      "bio_entity_count": 3,
+      "converted_result_count": 3,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "label": "PER",
+          "text": "郑振铎"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "label": "PER",
+          "text": "阿英"
+        },
+        {
+          "start": 50,
+          "end": 53,
+          "label": "ORG",
+          "text": "国民党"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 17,
+      "text_length": 26,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 10,
+          "end": 13,
+          "label": "LOC",
+          "text": "北京市"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 18,
+      "text_length": 74,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 6,
+          "end": 9,
+          "label": "PER",
+          "text": "姜德明"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 19,
+      "text_length": 66,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 53,
+          "end": 56,
+          "label": "PER",
+          "text": "李后主"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 20,
+      "text_length": 40,
+      "bio_entity_count": 4,
+      "converted_result_count": 4,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 15,
+          "end": 16,
+          "label": "LOC",
+          "text": "欧"
+        },
+        {
+          "start": 16,
+          "end": 17,
+          "label": "LOC",
+          "text": "美"
+        },
+        {
+          "start": 18,
+          "end": 19,
+          "label": "LOC",
+          "text": "港"
+        },
+        {
+          "start": 19,
+          "end": 20,
+          "label": "LOC",
+          "text": "台"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 26,
+      "text_length": 146,
+      "bio_entity_count": 11,
+      "converted_result_count": 11,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 3,
+          "end": 5,
+          "label": "ORG",
+          "text": "红军"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "label": "PER",
+          "text": "孙毅"
+        },
+        {
+          "start": 34,
+          "end": 42,
+          "label": "LOC",
+          "text": "晋察冀抗日根据地"
+        },
+        {
+          "start": 60,
+          "end": 62,
+          "label": "ORG",
+          "text": "红军"
+        },
+        {
+          "start": 62,
+          "end": 65,
+          "label": "PER",
+          "text": "王成汉"
+        },
+        {
+          "start": 68,
+          "end": 70,
+          "label": "LOC",
+          "text": "延安"
+        },
+        {
+          "start": 84,
+          "end": 87,
+          "label": "PER",
+          "text": "张太雷"
+        },
+        {
+          "start": 90,
+          "end": 93,
+          "label": "ORG",
+          "text": "新四军"
+        },
+        {
+          "start": 96,
+          "end": 99,
+          "label": "PER",
+          "text": "张西蕾"
+        },
+        {
+          "start": 116,
+          "end": 121,
+          "label": "ORG",
+          "text": "北洋工学院"
+        },
+        {
+          "start": 125,
+          "end": 128,
+          "label": "PER",
+          "text": "张太雷"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 27,
+      "text_length": 26,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 11,
+          "end": 16,
+          "label": "LOC",
+          "text": "北京图书馆"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 28,
+      "text_length": 35,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 18,
+          "end": 21,
+          "label": "ORG",
+          "text": "国民党"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 29,
+      "text_length": 128,
+      "bio_entity_count": 9,
+      "converted_result_count": 9,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "label": "PER",
+          "text": "周恩来"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "label": "PER",
+          "text": "马骏"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "label": "ORG",
+          "text": "南开中学"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "label": "PER",
+          "text": "李大钊"
+        },
+        {
+          "start": 42,
+          "end": 44,
+          "label": "LOC",
+          "text": "中国"
+        },
+        {
+          "start": 60,
+          "end": 64,
+          "label": "ORG",
+          "text": "黄埔军校"
+        },
+        {
+          "start": 78,
+          "end": 81,
+          "label": "PER",
+          "text": "恽代英"
+        },
+        {
+          "start": 99,
+          "end": 102,
+          "label": "ORG",
+          "text": "党中央"
+        },
+        {
+          "start": 107,
+          "end": 111,
+          "label": "ORG",
+          "text": "共产国际"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 30,
+      "text_length": 40,
+      "bio_entity_count": 3,
+      "converted_result_count": 3,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 27,
+          "end": 28,
+          "label": "PER",
+          "text": "马"
+        },
+        {
+          "start": 28,
+          "end": 29,
+          "label": "PER",
+          "text": "列"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "label": "LOC",
+          "text": "中国"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 31,
+      "text_length": 46,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 25,
+          "end": 26,
+          "label": "ORG",
+          "text": "国"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 41,
+      "text_length": 18,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "label": "PER",
+          "text": "国正"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 48,
+      "text_length": 63,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 51,
+          "end": 53,
+          "label": "LOC",
+          "text": "岭南"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 60,
+      "text_length": 59,
+      "bio_entity_count": 4,
+      "converted_result_count": 4,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 8,
+          "end": 10,
+          "label": "ORG",
+          "text": "辅仁"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "label": "ORG",
+          "text": "辅仁"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "label": "ORG",
+          "text": "北大"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "label": "ORG",
+          "text": "北大"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 64,
+      "text_length": 23,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "label": "PER",
+          "text": "国正"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 65,
+      "text_length": 23,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "label": "PER",
+          "text": "国正"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 68,
+      "text_length": 22,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 6,
+          "end": 8,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 69,
+      "text_length": 60,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 0,
+          "end": 1,
+          "label": "PER",
+          "text": "陈"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 70,
+      "text_length": 59,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 21,
+          "end": 24,
+          "label": "LOC",
+          "text": "玉峰山"
+        },
+        {
+          "start": 40,
+          "end": 42,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 71,
+      "text_length": 62,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 52,
+          "end": 53,
+          "label": "PER",
+          "text": "陈"
+        },
+        {
+          "start": 58,
+          "end": 60,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 76,
+      "text_length": 39,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 22,
+          "end": 24,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 77,
+      "text_length": 24,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 8,
+          "end": 11,
+          "label": "PER",
+          "text": "梁实秋"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 81,
+      "text_length": 41,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 32,
+          "end": 34,
+          "label": "PER",
+          "text": "陆羽"
+        },
+        {
+          "start": 37,
+          "end": 39,
+          "label": "PER",
+          "text": "卢仝"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 82,
+      "text_length": 26,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 3,
+          "end": 6,
+          "label": "LOC",
+          "text": "玉峰山"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 86,
+      "text_length": 18,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 9,
+          "end": 12,
+          "label": "LOC",
+          "text": "栋梁河"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 87,
+      "text_length": 38,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 8,
+          "end": 10,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 88,
+      "text_length": 31,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 12,
+          "end": 14,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 91,
+      "text_length": 21,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "label": "LOC",
+          "text": "玉峰山"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "label": "LOC",
+          "text": "栋梁河"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 92,
+      "text_length": 37,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 17,
+          "end": 19,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 93,
+      "text_length": 37,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 8,
+          "end": 9,
+          "label": "LOC",
+          "text": "日"
+        },
+        {
+          "start": 30,
+          "end": 32,
+          "label": "LOC",
+          "text": "玉峰"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 99,
+      "text_length": 32,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 17,
+          "end": 19,
+          "label": "LOC",
+          "text": "玉峰"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "label": "LOC",
+          "text": "重庆"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 100,
+      "text_length": 68,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 1,
+          "end": 3,
+          "label": "LOC",
+          "text": "京城"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 104,
+      "text_length": 63,
+      "bio_entity_count": 3,
+      "converted_result_count": 3,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 41,
+          "end": 43,
+          "label": "LOC",
+          "text": "玉峰"
+        },
+        {
+          "start": 53,
+          "end": 55,
+          "label": "LOC",
+          "text": "重庆"
+        },
+        {
+          "start": 58,
+          "end": 61,
+          "label": "LOC",
+          "text": "玉峰山"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 117,
+      "text_length": 50,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 18,
+          "end": 29,
+          "label": "ORG",
+          "text": "《中国珠宝首饰》杂志社"
+        },
+        {
+          "start": 41,
+          "end": 42,
+          "label": "LOC",
+          "text": "京"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 119,
+      "text_length": 40,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "label": "ORG",
+          "text": "工人日报"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 127,
+      "text_length": 38,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "label": "LOC",
+          "text": "太阳"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 137,
+      "text_length": 46,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 8,
+          "end": 11,
+          "label": "LOC",
+          "text": "北京城"
+        },
+        {
+          "start": 36,
+          "end": 38,
+          "label": "LOC",
+          "text": "北京"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 141,
+      "text_length": 35,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 9,
+          "end": 12,
+          "label": "ORG",
+          "text": "十五大"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 156,
+      "text_length": 19,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "label": "PER",
+          "text": "管仲"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 158,
+      "text_length": 58,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 0,
+          "end": 1,
+          "label": "PER",
+          "text": "尧"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 159,
+      "text_length": 25,
+      "bio_entity_count": 2,
+      "converted_result_count": 2,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 5,
+          "end": 6,
+          "label": "PER",
+          "text": "尧"
+        },
+        {
+          "start": 15,
+          "end": 16,
+          "label": "PER",
+          "text": "桀"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 162,
+      "text_length": 29,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "label": "PER",
+          "text": "袁崇焕"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 163,
+      "text_length": 24,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 14,
+          "end": 17,
+          "label": "ORG",
+          "text": "共产党"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 174,
+      "text_length": 78,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 52,
+          "end": 57,
+          "label": "ORG",
+          "text": "花城出版社"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 179,
+      "text_length": 83,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 55,
+          "end": 58,
+          "label": "ORG",
+          "text": "中央台"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 183,
+      "text_length": 34,
+      "bio_entity_count": 1,
+      "converted_result_count": 1,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 11,
+          "end": 14,
+          "label": "PER",
+          "text": "施盈富"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 189,
+      "text_length": 93,
+      "bio_entity_count": 7,
+      "converted_result_count": 7,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "label": "LOC",
+          "text": "大佛湾"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "label": "LOC",
+          "text": "香山"
+        },
+        {
+          "start": 41,
+          "end": 43,
+          "label": "LOC",
+          "text": "中华"
+        },
+        {
+          "start": 59,
+          "end": 60,
+          "label": "LOC",
+          "text": "华"
+        },
+        {
+          "start": 63,
+          "end": 66,
+          "label": "PER",
+          "text": "韩素音"
+        },
+        {
+          "start": 72,
+          "end": 74,
+          "label": "LOC",
+          "text": "大足"
+        },
+        {
+          "start": 77,
+          "end": 81,
+          "label": "LOC",
+          "text": "大足石窟"
+        }
+      ]
+    },
+    {
+      "source_sentence_index": 190,
+      "text_length": 56,
+      "bio_entity_count": 4,
+      "converted_result_count": 4,
+      "offset_text_match": true,
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "label": "LOC",
+          "text": "日本"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "label": "PER",
+          "text": "石川一成"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "label": "LOC",
+          "text": "宝顶大佛湾"
+        },
+        {
+          "start": 28,
+          "end": 30,
+          "label": "LOC",
+          "text": "中华"
+        }
+      ]
+    }
+  ]
+}

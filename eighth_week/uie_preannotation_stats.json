@@ -1,0 +1,31 @@
+{
+  "task": "week8_uie_zero_shot_preannotation",
+  "model": "uie-base",
+  "device": "cpu",
+  "schema": [
+    "技能",
+    "学历",
+    "经验年限",
+    "岗位名称",
+    "语言能力",
+    "知识领域"
+  ],
+  "task_count": 600,
+  "batch_size": 8,
+  "model_load_seconds": 3.892,
+  "inference_seconds": 714.424,
+  "seconds_per_text": 1.1907,
+  "predicted_span_count": 398,
+  "label_counts": {
+    "技能": 52,
+    "学历": 71,
+    "经验年限": 52,
+    "岗位名称": 12,
+    "语言能力": 8,
+    "知识领域": 203
+  },
+  "tasks_with_at_least_one_span": 165,
+  "error_count": 0,
+  "errors": [],
+  "output": "D:\\SiSennKoToBa\\eighth_week\\preannotated_week8.json"
+}

@@ -1,0 +1,42 @@
+{
+  "source_log": "run_evaluate_debug_v1.log",
+  "mode": "evaluate.py --debug（仅正例样本、SpanEvaluator token 级计数）",
+  "fields": [
+    {
+      "label": "知识领域",
+      "precision": 0.63333,
+      "recall": 0.22353,
+      "f1": 0.33043
+    },
+    {
+      "label": "技能",
+      "precision": 0.43243,
+      "recall": 0.25806,
+      "f1": 0.32323
+    },
+    {
+      "label": "岗位名称",
+      "precision": 0.33333,
+      "recall": 0.15385,
+      "f1": 0.21053
+    },
+    {
+      "label": "经验年限",
+      "precision": 0.92308,
+      "recall": 0.70588,
+      "f1": 0.8
+    },
+    {
+      "label": "学历",
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.88889
+    },
+    {
+      "label": "语言能力",
+      "precision": 0.66667,
+      "recall": 0.5,
+      "f1": 0.57143
+    }
+  ]
+}

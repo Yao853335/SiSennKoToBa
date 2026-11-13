@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>环境验证终端输出</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #eef2f7; }
+    body {
+      padding: 28px;
+      font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif;
+    }
+    .window {
+      width: 1420px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 16px 42px rgba(21, 31, 48, .24);
+      background: #111827;
+    }
+    .bar {
+      height: 54px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #1f2937;
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+    .dot { width: 14px; height: 14px; border-radius: 50%; }
+    .red { background: #ff605c; }
+    .yellow { background: #ffbd44; }
+    .green { background: #00ca4e; }
+    .title { margin-left: 12px; }
+    pre {
+      margin: 0;
+      padding: 28px 32px 32px;
+      color: #e5edf8;
+      font: 18px/1.62 "Cascadia Mono", "Consolas", monospace;
+      white-space: pre-wrap;
+    }
+    .prompt { color: #7dd3fc; }
+    .ok { color: #86efac; }
+    .key { color: #fde68a; }
+  </style>
+</head>
+<body>
+  <div class="window">
+    <div class="bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="title">PowerShell - D:\SiSennKoToBa</span>
+    </div>
+    <pre><span class="prompt">PS D:\SiSennKoToBa&gt;</span> .\.venv\Scripts\python.exe -B .\scripts\verify_environment.py
+
+<span class="key">Paddle:</span> 2.6.2
+<span class="key">PaddleNLP:</span> 2.6.1.post
+<span class="key">Device:</span> cpu
+<span class="key">compiled_with_cuda:</span> false
+
+<span class="key">schema:</span> ["药品名称"]
+<span class="key">text:</span> 布洛芬分散片，口服或加水分散后服用。
+
+<span class="ok">extraction:</span> [
+  {
+    "药品名称": [
+      {
+        "text": "布洛芬分散片",
+        "start": 0,
+        "end": 6,
+        "probability": 0.922725441455654
+      }
+    ]
+  }
+]</pre>
+  </div>
+</body>
+</html>

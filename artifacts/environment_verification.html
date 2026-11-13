@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>UIE CPU 环境验证</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #62708a;
+      --line: #dfe5ef;
+      --green: #087a55;
+      --green-bg: #e8f7f0;
+      --blue: #2457a6;
+      --blue-bg: #eaf1ff;
+      --paper: #ffffff;
+      --canvas: #f4f7fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif;
+    }
+    .page {
+      width: 1460px;
+      min-height: 980px;
+      margin: 40px auto;
+      padding: 54px 62px 46px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 55px rgba(33, 48, 77, .10);
+    }
+    .eyebrow {
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: .12em;
+    }
+    h1 {
+      margin: 12px 0 10px;
+      font-size: 42px;
+      letter-spacing: -.02em;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 20px;
+    }
+    .chips {
+      display: flex;
+      gap: 12px;
+      margin: 28px 0 34px;
+    }
+    .chip {
+      padding: 9px 15px;
+      border-radius: 999px;
+      background: var(--blue-bg);
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .chip.success {
+      background: var(--green-bg);
+      color: var(--green);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 430px 1fr;
+      gap: 34px;
+    }
+    h2 {
+      margin: 0 0 17px;
+      font-size: 22px;
+    }
+    .version-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .version-row {
+      display: grid;
+      grid-template-columns: 145px 1fr;
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--line);
+      font-size: 17px;
+    }
+    .version-row:last-child { border-bottom: 0; }
+    .key { color: var(--muted); }
+    .value { font-weight: 700; }
+    .result-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 21px 24px;
+      margin-bottom: 22px;
+      background: linear-gradient(180deg, #fbfcff, #fff);
+    }
+    .result-main {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .result-word {
+      padding: 11px 18px;
+      border-radius: 12px;
+      background: var(--green-bg);
+      color: var(--green);
+      font-size: 28px;
+      font-weight: 800;
+    }
+    .probability {
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .probability strong { color: var(--ink); font-size: 24px; }
+    pre {
+      margin: 0;
+      padding: 23px 25px;
+      background: #111827;
+      color: #e6edf7;
+      border-radius: 16px;
+      font: 16px/1.65 "Cascadia Mono", "Consolas", monospace;
+      white-space: pre-wrap;
+    }
+    .footnote {
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="eyebrow">SiSennKoToBa · 环境交付</div>
+    <h1>PaddleNLP UIE CPU 环境验证</h1>
+    <p class="subtitle">项目专属环境已完成依赖安装、模型加载与一次真实实体抽取。</p>
+    <div class="chips">
+      <span class="chip success">● 验证通过</span>
+      <span class="chip">device: cpu</span>
+      <span class="chip">compiled_with_cuda: false</span>
+      <span class="chip">2026-10-18 19:03 +08:00</span>
+    </div>
+    <div class="grid">
+      <section>
+        <h2>运行环境</h2>
+        <div class="version-card">
+          <div class="version-row"><span class="key">Python</span><span class="value">3.8.0</span></div>
+          <div class="version-row"><span class="key">PaddlePaddle</span><span class="value">2.6.2</span></div>
+          <div class="version-row"><span class="key">PaddleNLP</span><span class="value">2.6.1.post</span></div>
+          <div class="version-row"><span class="key">UIE 模型</span><span class="value">uie-base</span></div>
+          <div class="version-row"><span class="key">虚拟环境</span><span class="value">.venv</span></div>
+          <div class="version-row"><span class="key">模型缓存</span><span class="value">.cache/paddlenlp</span></div>
+        </div>
+      </section>
+      <section>
+        <h2>实际抽取结果</h2>
+        <div class="result-card">
+          <div class="result-main">
+            <span class="result-word">布洛芬分散片</span>
+            <span class="probability">字段「药品名称」· 置信度 <strong>0.9227</strong></span>
+          </div>
+        </div>
+        <pre>{
+  "schema": ["药品名称"],
+  "text": "布洛芬分散片，口服或加水分散后服用。",
+  "extraction": [
+    {
+      "药品名称": [
+        {
+          "text": "布洛芬分散片",
+          "start": 0,
+          "end": 6,
+          "probability": 0.922725441455654
+        }
+      ]
+    }
+  ]
+}</pre>
+      </section>
+    </div>
+    <div class="footnote">
+      证据来源：artifacts/environment_verification.log 与 artifacts/setup_status.json。
+      本页用于归档截图，数据未做人工改写。PaddleNLP 2.6 系列的公开包版本为 2.6.1；
+      上游不存在 2.6.2 包，因此采用实际存在且匹配的 PaddlePaddle 2.6.2 + PaddleNLP 2.6.1。
+    </div>
+  </main>
+</body>
+</html>

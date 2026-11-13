@@ -1,0 +1,92 @@
+{
+  "task": "week8_stratified_corpus_sampling",
+  "random_seed": 42,
+  "source_version": "Chinese-SkillSpan v0.1.3",
+  "source_metadata": {
+    "source_files": {
+      "train_lskt_v4_silver.jsonl": 17460,
+      "dev_lskt_v4_silver.jsonl": 2143
+    },
+    "source_records": 19603,
+    "unique_sentences": 18054,
+    "duplicate_sentences_removed": 1549,
+    "source_domain_counts": {
+      "应届生招聘": 9470,
+      "人工智能招聘": 8584
+    },
+    "length_bucket_counts_before_sampling": {
+      "medium": 3202,
+      "short": 14490,
+      "long": 362
+    }
+  },
+  "sampling_plan": {
+    "short": {
+      "label": "短句（<50字）",
+      "fraction": 0.3,
+      "available_by_domain": {
+        "人工智能招聘": 6668,
+        "应届生招聘": 7822
+      },
+      "selected_by_domain": {
+        "应届生招聘": 113,
+        "人工智能招聘": 97
+      },
+      "selected": 210
+    },
+    "medium": {
+      "label": "中间长度（50-150字）",
+      "fraction": 0.4,
+      "available_by_domain": {
+        "人工智能招聘": 1746,
+        "应届生招聘": 1456
+      },
+      "selected_by_domain": {
+        "应届生招聘": 127,
+        "人工智能招聘": 153
+      },
+      "selected": 280
+    },
+    "long": {
+      "label": "长句（>150字）",
+      "fraction": 0.3,
+      "available_by_domain": {
+        "人工智能招聘": 170,
+        "应届生招聘": 192
+      },
+      "selected_by_domain": {
+        "人工智能招聘": 99,
+        "应届生招聘": 111
+      },
+      "selected": 210
+    },
+    "target_total": 700,
+    "active_target": 600,
+    "reserve_target": 100,
+    "active_by_bucket": {
+      "long": 180,
+      "short": 180,
+      "medium": 240
+    },
+    "reserve_by_bucket": {
+      "long": 30,
+      "medium": 40,
+      "short": 30
+    },
+    "active_by_domain": {
+      "应届生招聘": 300,
+      "人工智能招聘": 300
+    },
+    "reserve_by_domain": {
+      "人工智能招聘": 49,
+      "应届生招聘": 51
+    }
+  },
+  "active_pool_count": 600,
+  "reserve_count": 100,
+  "manual_supplement_count": 0,
+  "active_unique_texts": 600,
+  "reserve_unique_texts": 100,
+  "corpus_sha256": "be064d7aa08cc0285dc9e623cc2e9b34f7fa053c4702c13366025c4f0f33ef46",
+  "reserve_sha256": "afe682e4643c7227c26101ff83660f3663854b3929262fbd282c0232e38e6934"
+}

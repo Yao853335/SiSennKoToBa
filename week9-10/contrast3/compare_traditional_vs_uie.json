@@ -1,0 +1,376 @@
+{
+  "task": "contrast3_traditional_vs_uie",
+  "gold": "D:\\SiSennKoToBa\\week9-10\\contrast3\\jd_orgloc_gold.jsonl",
+  "alignment_rule": "(start, end, label) 与 gold 完全一致才算 TP；实体子集=人工映射的 PER/ORG/LOC",
+  "note": "传统模型为 MSRA 新闻域预训练权重（未针对 JD 再训练）；UIE 为 uie-base 零样本 schema=[人名,机构名,地名]；本测试集 JD 原文无真实人名，PER 支撑为 0",
+  "texts": 60,
+  "traditional_idcnn": {
+    "fields": [
+      {
+        "label": "PER",
+        "support_gold": 0,
+        "predicted": 2,
+        "TP": 0,
+        "FP": 2,
+        "FN": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "label": "ORG",
+        "support_gold": 22,
+        "predicted": 15,
+        "TP": 4,
+        "FP": 11,
+        "FN": 18,
+        "precision": 0.26667,
+        "recall": 0.18182,
+        "f1": 0.21622
+      },
+      {
+        "label": "LOC",
+        "support_gold": 13,
+        "predicted": 19,
+        "TP": 3,
+        "FP": 16,
+        "FN": 10,
+        "precision": 0.15789,
+        "recall": 0.23077,
+        "f1": 0.1875
+      }
+    ],
+    "overall_micro": {
+      "TP": 7,
+      "FP": 29,
+      "FN": 28,
+      "precision": 0.19444,
+      "recall": 0.2,
+      "f1": 0.19718
+    }
+  },
+  "uie_zero_shot": {
+    "fields": [
+      {
+        "label": "PER",
+        "support_gold": 0,
+        "predicted": 1,
+        "TP": 0,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "label": "ORG",
+        "support_gold": 22,
+        "predicted": 5,
+        "TP": 4,
+        "FP": 1,
+        "FN": 18,
+        "precision": 0.8,
+        "recall": 0.18182,
+        "f1": 0.2963
+      },
+      {
+        "label": "LOC",
+        "support_gold": 13,
+        "predicted": 12,
+        "TP": 10,
+        "FP": 2,
+        "FN": 3,
+        "precision": 0.83333,
+        "recall": 0.76923,
+        "f1": 0.8
+      }
+    ],
+    "overall_micro": {
+      "TP": 14,
+      "FP": 4,
+      "FN": 21,
+      "precision": 0.77778,
+      "recall": 0.4,
+      "f1": 0.5283
+    }
+  },
+  "gradient_nested_subsets": {
+    "n=25": {
+      "traditional_idcnn": {
+        "fields": [
+          {
+            "label": "PER",
+            "support_gold": 0,
+            "predicted": 1,
+            "TP": 0,
+            "FP": 1,
+            "FN": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "ORG",
+            "support_gold": 8,
+            "predicted": 4,
+            "TP": 2,
+            "FP": 2,
+            "FN": 6,
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.33333
+          },
+          {
+            "label": "LOC",
+            "support_gold": 0,
+            "predicted": 2,
+            "TP": 0,
+            "FP": 2,
+            "FN": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "overall_micro": {
+          "TP": 2,
+          "FP": 5,
+          "FN": 6,
+          "precision": 0.28571,
+          "recall": 0.25,
+          "f1": 0.26667
+        }
+      },
+      "uie_zero_shot": {
+        "fields": [
+          {
+            "label": "PER",
+            "support_gold": 0,
+            "predicted": 1,
+            "TP": 0,
+            "FP": 1,
+            "FN": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "ORG",
+            "support_gold": 8,
+            "predicted": 3,
+            "TP": 3,
+            "FP": 0,
+            "FN": 5,
+            "precision": 1.0,
+            "recall": 0.375,
+            "f1": 0.54545
+          },
+          {
+            "label": "LOC",
+            "support_gold": 0,
+            "predicted": 1,
+            "TP": 0,
+            "FP": 1,
+            "FN": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "overall_micro": {
+          "TP": 3,
+          "FP": 2,
+          "FN": 5,
+          "precision": 0.6,
+          "recall": 0.375,
+          "f1": 0.46154
+        }
+      }
+    },
+    "n=50": {
+      "traditional_idcnn": {
+        "fields": [
+          {
+            "label": "PER",
+            "support_gold": 0,
+            "predicted": 2,
+            "TP": 0,
+            "FP": 2,
+            "FN": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "ORG",
+            "support_gold": 13,
+            "predicted": 12,
+            "TP": 3,
+            "FP": 9,
+            "FN": 10,
+            "precision": 0.25,
+            "recall": 0.23077,
+            "f1": 0.24
+          },
+          {
+            "label": "LOC",
+            "support_gold": 5,
+            "predicted": 7,
+            "TP": 1,
+            "FP": 6,
+            "FN": 4,
+            "precision": 0.14286,
+            "recall": 0.2,
+            "f1": 0.16667
+          }
+        ],
+        "overall_micro": {
+          "TP": 4,
+          "FP": 17,
+          "FN": 14,
+          "precision": 0.19048,
+          "recall": 0.22222,
+          "f1": 0.20513
+        }
+      },
+      "uie_zero_shot": {
+        "fields": [
+          {
+            "label": "PER",
+            "support_gold": 0,
+            "predicted": 1,
+            "TP": 0,
+            "FP": 1,
+            "FN": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "ORG",
+            "support_gold": 13,
+            "predicted": 4,
+            "TP": 3,
+            "FP": 1,
+            "FN": 10,
+            "precision": 0.75,
+            "recall": 0.23077,
+            "f1": 0.35294
+          },
+          {
+            "label": "LOC",
+            "support_gold": 5,
+            "predicted": 5,
+            "TP": 4,
+            "FP": 1,
+            "FN": 1,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8
+          }
+        ],
+        "overall_micro": {
+          "TP": 7,
+          "FP": 3,
+          "FN": 11,
+          "precision": 0.7,
+          "recall": 0.38889,
+          "f1": 0.5
+        }
+      }
+    },
+    "n=60": {
+      "traditional_idcnn": {
+        "fields": [
+          {
+            "label": "PER",
+            "support_gold": 0,
+            "predicted": 2,
+            "TP": 0,
+            "FP": 2,
+            "FN": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "ORG",
+            "support_gold": 22,
+            "predicted": 15,
+            "TP": 4,
+            "FP": 11,
+            "FN": 18,
+            "precision": 0.26667,
+            "recall": 0.18182,
+            "f1": 0.21622
+          },
+          {
+            "label": "LOC",
+            "support_gold": 13,
+            "predicted": 19,
+            "TP": 3,
+            "FP": 16,
+            "FN": 10,
+            "precision": 0.15789,
+            "recall": 0.23077,
+            "f1": 0.1875
+          }
+        ],
+        "overall_micro": {
+          "TP": 7,
+          "FP": 29,
+          "FN": 28,
+          "precision": 0.19444,
+          "recall": 0.2,
+          "f1": 0.19718
+        }
+      },
+      "uie_zero_shot": {
+        "fields": [
+          {
+            "label": "PER",
+            "support_gold": 0,
+            "predicted": 1,
+            "TP": 0,
+            "FP": 1,
+            "FN": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "ORG",
+            "support_gold": 22,
+            "predicted": 5,
+            "TP": 4,
+            "FP": 1,
+            "FN": 18,
+            "precision": 0.8,
+            "recall": 0.18182,
+            "f1": 0.2963
+          },
+          {
+            "label": "LOC",
+            "support_gold": 13,
+            "predicted": 12,
+            "TP": 10,
+            "FP": 2,
+            "FN": 3,
+            "precision": 0.83333,
+            "recall": 0.76923,
+            "f1": 0.8
+          }
+        ],
+        "overall_micro": {
+          "TP": 14,
+          "FP": 4,
+          "FN": 21,
+          "precision": 0.77778,
+          "recall": 0.4,
+          "f1": 0.5283
+        }
+      }
+    }
+  },
+  "delta_micro_f1_traditional_minus_uie": -0.33112
+}

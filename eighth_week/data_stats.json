@@ -1,0 +1,84 @@
+{
+  "schema": [
+    "技能",
+    "学历",
+    "经验年限",
+    "岗位名称",
+    "语言能力",
+    "知识领域"
+  ],
+  "raw_task_total": 600,
+  "splits": {
+    "train": {
+      "raw_tasks": 480,
+      "raw_task_ratio": 0.8,
+      "span_count": 1834,
+      "field_span_counts": {
+        "技能": 902,
+        "学历": 71,
+        "经验年限": 90,
+        "岗位名称": 137,
+        "语言能力": 41,
+        "知识领域": 593
+      },
+      "field_task_coverage": {
+        "技能": 253,
+        "学历": 64,
+        "经验年限": 67,
+        "岗位名称": 67,
+        "语言能力": 20,
+        "知识领域": 204
+      },
+      "empty_annotation_tasks": 131,
+      "generated_prompt_examples": 2880
+    },
+    "dev": {
+      "raw_tasks": 60,
+      "raw_task_ratio": 0.1,
+      "span_count": 250,
+      "field_span_counts": {
+        "技能": 118,
+        "学历": 8,
+        "经验年限": 23,
+        "岗位名称": 28,
+        "语言能力": 1,
+        "知识领域": 72
+      },
+      "field_task_coverage": {
+        "技能": 33,
+        "学历": 8,
+        "经验年限": 8,
+        "岗位名称": 9,
+        "语言能力": 1,
+        "知识领域": 27
+      },
+      "empty_annotation_tasks": 12,
+      "generated_prompt_examples": 360
+    },
+    "test": {
+      "raw_tasks": 60,
+      "raw_task_ratio": 0.1,
+      "span_count": 248,
+      "field_span_counts": {
+        "技能": 124,
+        "学历": 5,
+        "经验年限": 17,
+        "岗位名称": 13,
+        "语言能力": 4,
+        "知识领域": 85
+      },
+      "field_task_coverage": {
+        "技能": 32,
+        "学历": 5,
+        "经验年限": 11,
+        "岗位名称": 8,
+        "语言能力": 2,
+        "知识领域": 30
+      },
+      "empty_annotation_tasks": 17,
+      "generated_prompt_examples": 360
+    }
+  },
+  "test_missing_fields": [],
+  "all_test_fields_have_positive_examples": true
+}

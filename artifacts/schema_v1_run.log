@@ -1,0 +1,21 @@
+drug_01 布洛芬分散片: 5/6 fields, {'药品名称': 1, '用法': 1, '用量': 1, '频次': 0, '适应症': 8, '禁忌': 1}
+drug_02 阿莫西林胶囊: 5/6 fields, {'药品名称': 1, '用法': 1, '用量': 1, '频次': 0, '适应症': 3, '禁忌': 1}
+drug_03 蒙脱石散: 6/6 fields, {'药品名称': 1, '用法': 1, '用量': 1, '频次': 1, '适应症': 1, '禁忌': 1}
+drug_04 对乙酰氨基酚片: 6/6 fields, {'药品名称': 1, '用法': 1, '用量': 1, '频次': 1, '适应症': 2, '禁忌': 1}
+drug_05 硝苯地平控释片: 6/6 fields, {'药品名称': 1, '用法': 1, '用量': 1, '频次': 2, '适应症': 2, '禁忌': 1}
+drug_06 奥美拉唑肠溶胶囊: 5/6 fields, {'药品名称': 2, '用法': 1, '用量': 1, '频次': 0, '适应症': 3, '禁忌': 1}
+drug_07 氯雷他定片: 6/6 fields, {'药品名称': 1, '用法': 1, '用量': 1, '频次': 1, '适应症': 7, '禁忌': 1}
+drug_08 复方甘草片: 5/6 fields, {'药品名称': 1, '用法': 2, '用量': 1, '频次': 1, '适应症': 0, '禁忌': 2}
+drug_09 门冬胰岛素注射液: 3/6 fields, {'药品名称': 1, '用法': 1, '用量': 0, '频次': 0, '适应症': 1, '禁忌': 0}
+drug_10 红霉素软膏: 5/6 fields, {'药品名称': 1, '用法': 1, '用量': 0, '频次': 1, '适应症': 4, '禁忌': 1}
+elapsed_seconds=22.325
+
+[stderr]
+D:\SiSennKoToBa\.venv\lib\site-packages\_distutils_hack\__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+[32m[2026-10-18 19:04:14,561] [    INFO][0m - We are using <class 'paddlenlp.transformers.ernie.tokenizer.ErnieTokenizer'> to load 'D:\SiSennKoToBa\.cache\paddlenlp\taskflow\information_extraction\uie-base'.[0m
+D:\SiSennKoToBa\.venv\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:2478: FutureWarning: The `max_seq_len` argument is deprecated and will be removed in a future version, please use `max_length` instead.
+  warnings.warn(
+D:\SiSennKoToBa\.venv\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:1878: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+

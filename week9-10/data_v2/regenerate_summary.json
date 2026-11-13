@@ -1,0 +1,35 @@
+{
+  "schema_v1": [
+    "技能",
+    "学历",
+    "经验年限",
+    "岗位名称",
+    "语言能力",
+    "知识领域"
+  ],
+  "rename": {
+    "技能": "专业技能",
+    "岗位名称": "招聘职位"
+  },
+  "schema_v2": [
+    "专业技能",
+    "学历",
+    "经验年限",
+    "招聘职位",
+    "语言能力",
+    "知识领域"
+  ],
+  "seed": 42,
+  "splits": [
+    "0.8",
+    "0.1",
+    "0.1"
+  ],
+  "test_set_check": {
+    "v1_texts": 60,
+    "v2_texts": 60,
+    "texts_identical": true,
+    "gold_span_mismatch_texts": 0,
+    "label_set_mismatch_texts": 0
+  }
+}

@@ -1,0 +1,2256 @@
+[
+  {
+    "data": {
+      "text": "因有关日寇在京掠夺文物详情，藏界较为重视，也是我们收藏北京史料中的要件之一。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 3,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 4,
+              "text": "日",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 7,
+              "text": "京",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 27,
+              "end": 29,
+              "text": "北京",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "我们藏有一册１９４５年６月油印的《北京文物保存保管状态之调查报告》，调查范围涉及故宫、历博、古研所、北大清华图书馆、北图、日伪资料库等二十几家，言及文物二十万件以上，洋洋三万余言，是珍贵的北京史料。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 4,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 19,
+              "text": "北京",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 40,
+              "end": 42,
+              "text": "故宫",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 43,
+              "end": 45,
+              "text": "历博",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 46,
+              "end": 49,
+              "text": "古研所",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 50,
+              "end": 57,
+              "text": "北大清华图书馆",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 58,
+              "end": 60,
+              "text": "北图",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 61,
+              "end": 62,
+              "text": "日",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 94,
+              "end": 96,
+              "text": "北京",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "我们是受到郑振铎先生、阿英先生著作的启示，从个人条件出发，瞄准现代出版史研究的空白，重点集藏解放区、国民党毁禁出版物。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 6,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 5,
+              "end": 8,
+              "text": "郑振铎",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 11,
+              "end": 13,
+              "text": "阿英",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 50,
+              "end": 53,
+              "text": "国民党",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "去年，我们又被评为“北京市首届家庭藏书状元明星户”。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 17,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 10,
+              "end": 13,
+              "text": "北京市",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "藏书家、作家姜德明先生在１９９７年出版的书话专集《文林枝叶》中以“爱书的朋友”为题，详细介绍了我们夫妇的藏品及三口之家以书为友、好乐清贫的逸闻趣事。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 18,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 9,
+              "text": "姜德明",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "每当接到海外书友或归国人员汇至一册精美的食品图谱时，全家人欣喜若狂；而一册交换品离我而去，虽为复本，也大有李后主“挥泪别宫娥”之感。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 19,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 53,
+              "end": 56,
+              "text": "李后主",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "我们变而以书会友，以书结缘，把欧美、港台流行的食品类图谱、画册、工具书汇集一堂。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 20,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 15,
+              "end": 16,
+              "text": "欧",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 16,
+              "end": 17,
+              "text": "美",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 18,
+              "end": 19,
+              "text": "港",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 19,
+              "end": 20,
+              "text": "台",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "老一代红军将领孙毅将军为我们收藏的二十余册（１９３７年—１９４５年）晋察冀抗日根据地出版物签名盖章并榜书“奋斗”相赠；老红军王成汉上将为延安时期多种出版物签字；革命先烈张太雷之女、新四军老战士张西蕾老人在我们收藏的六十多年前出版的《北洋工学院校友录》张太雷烈士条目上题写“先父大人永垂不朽”。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 26,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 5,
+              "text": "红军",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 7,
+              "end": 9,
+              "text": "孙毅",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 34,
+              "end": 42,
+              "text": "晋察冀抗日根据地",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 60,
+              "end": 62,
+              "text": "红军",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 62,
+              "end": 65,
+              "text": "王成汉",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 68,
+              "end": 70,
+              "text": "延安",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 84,
+              "end": 87,
+              "text": "张太雷",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 90,
+              "end": 93,
+              "text": "新四军",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 96,
+              "end": 99,
+              "text": "张西蕾",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 116,
+              "end": 121,
+              "text": "北洋工学院",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 125,
+              "end": 128,
+              "text": "张太雷",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "我们的藏品中有几十册为北京图书馆等国家级藏馆所未藏。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 27,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 11,
+              "end": 16,
+              "text": "北京图书馆",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "由于这一时期战争频繁，条件艰苦，又遭国民党毁禁，传世量稀少，购藏不易。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 28,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 18,
+              "end": 21,
+              "text": "国民党",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "尤以收录周恩来总理、马骏烈士的《南开中学同学录》（１９１９年）、李大钊烈士遗篇孤本《中国大学学术演讲录》（１９２３年）、黄埔军校政治宣传教材（１９２７年）、恽代英烈士译著《阶级争斗》（１９２６年）、党中央机关月刊《共产国际》（１９３０年）等为收藏界所称道。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 29,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 4,
+              "end": 7,
+              "text": "周恩来",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 10,
+              "end": 12,
+              "text": "马骏",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 16,
+              "end": 20,
+              "text": "南开中学",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 32,
+              "end": 35,
+              "text": "李大钊",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 42,
+              "end": 44,
+              "text": "中国",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 60,
+              "end": 64,
+              "text": "黄埔军校",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 78,
+              "end": 81,
+              "text": "恽代英",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 99,
+              "end": 102,
+              "text": "党中央",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 107,
+              "end": 111,
+              "text": "共产国际",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "这两百余册革命历史文献完整地反映了从１９０８年到建国前马列主义在中国传播的历史。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 30,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 27,
+              "end": 28,
+              "text": "马",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 28,
+              "end": 29,
+              "text": "列",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 32,
+              "end": 34,
+              "text": "中国",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "在我们的专题藏品中，有一类是建国前各解放区出版物和国统区查禁书刊及敌占区各类地下革命出版物。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 31,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 25,
+              "end": 26,
+              "text": "国",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "国正先生在我心中就是这样的一位学长。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 41,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 2,
+              "text": "国正",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "有的乍暖先春，明媚之至；有的老树正旺，新篁出笋；有的乔木参天，而初绿犹新，生意嫣然……皆宋元娟秀，又蒙岭南泽润，观之令人神往。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 48,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 51,
+              "end": 53,
+              "text": "岭南",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "本来嘛，学长先入辅仁，学弟亦先入辅仁；学长再入北大，学弟亦再入北大，弟从兄一步一趋，说是老同学、老学长，“良有以也”。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 60,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 8,
+              "end": 10,
+              "text": "辅仁",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 16,
+              "end": 18,
+              "text": "辅仁",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 23,
+              "end": 25,
+              "text": "北大",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 31,
+              "end": 33,
+              "text": "北大",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "国正学长的文章与诗词，早就读过一些，很是喜欢。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 64,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 2,
+              "text": "国正",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "我与国正学长，竟就是这一种，实在是难得，难得！"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 65,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 2,
+              "end": 4,
+              "text": "国正",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "慕名前来品尝玉峰茶，领略茶文化的人越来越多。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 68,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 8,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "陈老师还特别提到，学校早已搬进新盖的教学大楼，那座后来荒废了的茶馆又恢复了昔日的风采，而且比原来更气派，更富有文化韵味。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 69,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 1,
+              "text": "陈",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "从老师的来信中得知，党的十一届三中全会后，玉峰山荒山承包，昔日的茶园又恢复起来，玉峰茶又声名远播，茶农都靠种茶致富了。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 70,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 21,
+              "end": 24,
+              "text": "玉峰山",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 40,
+              "end": 42,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "一年后，我初中还没毕业就参军了，从此浪迹天涯，很少有机会回故乡，但无论我走到哪里，每年清明节后，都会收到陈老师寄来的玉峰茶。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 71,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 52,
+              "end": 53,
+              "text": "陈",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 58,
+              "end": 60,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "想来他的《雅舍小品》中关于茶的描写或许就是受玉峰茶的启发，才使文章那么有灵性。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 76,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 22,
+              "end": 24,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "据说应老友之邀，梁实秋还坐着滑竿来此品过玉峰茶。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 77,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 8,
+              "end": 11,
+              "text": "梁实秋",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 20,
+              "end": 22,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "茶馆大门口有一副对联，上联是“采向雨前、烹宜竹里”，下联是“经翻陆羽、歌记卢仝”。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 81,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 32,
+              "end": 34,
+              "text": "陆羽",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 37,
+              "end": 39,
+              "text": "卢仝",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "再远处玉峰山上茶林片片，竹海林涛，乡野风光令人陶醉。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 82,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 6,
+              "text": "玉峰山",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "吊脚楼茶馆，坐落在栋梁河边的悬崖上。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 86,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 9,
+              "end": 12,
+              "text": "栋梁河",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "从那以后我才知道玉峰茶有这么大的名气，家乡的吊脚楼茶馆还和这么多名人有关系。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 87,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 8,
+              "end": 10,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "老教授说，不光他自己喜欢玉峰茶，还要经常给在外国的老教授寄去。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 88,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 12,
+              "end": 14,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "他还记得玉峰山下的栋梁河边那座吊脚楼茶馆。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 91,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 4,
+              "end": 7,
+              "text": "玉峰山",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 9,
+              "end": 12,
+              "text": "栋梁河",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "当时交通困难，物资短缺，是那清香的玉峰茶，伴随着他们度过了抗战的艰难岁月。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 92,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 19,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "抗战时期，为躲避日机轰炸，他所在的大学疏散到了乡下，就是出产玉峰茶的地方。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 93,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 8,
+              "end": 9,
+              "text": "日",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 30,
+              "end": 32,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "初春的一天，我和妈妈背着精心炮制的玉峰茶，到重庆去换粮食度饥荒。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 99,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 19,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 22,
+              "end": 24,
+              "text": "重庆",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "在京城畅饮故乡名茶，一缕乡愁随香气溢出，一怀往事随茶而至，细细品来，又仿佛品出了人生的酸甜苦辣……啜入口中，顿觉神清气爽，拂去尘世落寞。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 100,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 1,
+              "end": 3,
+              "text": "京城",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "和往年一样，清明节刚过，我的中学老师就千里迢迢寄来新采制的“雨前茶”，这是一种名叫玉峰云雾茶的绿茶，生长在重庆市郊的玉峰山麓。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 104,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 41,
+              "end": 43,
+              "text": "玉峰",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 53,
+              "end": 55,
+              "text": "重庆",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 58,
+              "end": 61,
+              "text": "玉峰山",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "我下了车，一溜小跑儿，来到朋友供职的《中国珠宝首饰》杂志社，没想到，巧遇一位外地来京组稿的熟悉编辑。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 117,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 18,
+              "end": 29,
+              "text": "《中国珠宝首饰》杂志社",
+              "labels": [
+                "ORG"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 41,
+              "end": 42,
+              "text": "京",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "我指指路旁的工人日报宿舍，说：“朋友，能不能在这儿停一下，我送点东西马上就出来。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 119,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 10,
+              "text": "工人日报",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "太阳已经升起老高，热气升腾，从大嫂艰难移动的步履中可以感受到她的疲惫与无助。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 127,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 2,
+              "text": "太阳",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "因为黄色的面的在北京城铺天盖地，且又能钻能蹿，而开车的司机则被善于调侃的北京人称为“的哥”。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 137,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 8,
+              "end": 11,
+              "text": "北京城",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 36,
+              "end": 38,
+              "text": "北京",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "令人感到宽慰的是，十五大以来，尤其今年以来，我国政坛不时吹来习习清风。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 141,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 9,
+              "end": 12,
+              "text": "十五大",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "管仲说过，“见贤不让者，不可予尊位”！"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 156,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 2,
+              "text": "管仲",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "尧再有本事，如果只是普通一兵普通一民，没权没钱，穷得丁当响，不要说治三人，老婆会不会跟人家“大款”跑了，都很难说的。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 158,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 1,
+              "text": "尧",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "有道是：“尧为匹夫不能治三人，桀为天子可以乱天下！"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 159,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 5,
+              "end": 6,
+              "text": "尧",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 15,
+              "end": 16,
+              "text": "桀",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "记得袁崇焕墓前的庙门上有句话，叫做“一人而系天下之安危”。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 162,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 2,
+              "end": 5,
+              "text": "袁崇焕",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "我的这位老朋友讲：“这才像个共产党干部的样子嘛！"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 163,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 14,
+              "end": 17,
+              "text": "共产党",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "但有一点，我的第一部长篇———《时乐传》，就是在当年诗友的帮助下写就的，这在当初纯文学极不景气的情况下，花城出版社把这个任务交给我，无疑是对我的信任和扶持。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 174,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 52,
+              "end": 57,
+              "text": "花城出版社",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "后来一家国字号的歌舞团头头，叫我给他们写点歌词，我答应试一试，没想到这试出来的第一首歌词，很快化为声音，而且在中央台这个大喇叭里放出来，不久又化为铅字，又灌制成唱片。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 179,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 55,
+              "end": 58,
+              "text": "中央台",
+              "labels": [
+                "ORG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "可是，有心计的新闻干事施盈富，却把它记在本子上，登在《战士诗选》里。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 183,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 11,
+              "end": 14,
+              "text": "施盈富",
+              "labels": [
+                "PER"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "走出大佛湾，站在香山上俯视，四周峰峦拥翠，云雾飘渺之中，似有一位古代贤人将一幅写满中华民族文化史的画卷向你徐徐展开……华裔作家韩素音女士曾三次到大足，称“大足石窟是一座未被开发的金矿”。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 189,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 2,
+              "end": 5,
+              "text": "大佛湾",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 8,
+              "end": 10,
+              "text": "香山",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 41,
+              "end": 43,
+              "text": "中华",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 59,
+              "end": 60,
+              "text": "华",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 63,
+              "end": 66,
+              "text": "韩素音",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 72,
+              "end": 74,
+              "text": "大足",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 77,
+              "end": 81,
+              "text": "大足石窟",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "日本知名学者石川一成先生曾撰文说：面对宝顶大佛湾造像，看中华民族囊括外来文化的能力和创造能力，不禁使我目瞪口呆。"
+    },
+    "meta": {
+      "source": "MSRA NER train BIO",
+      "source_sentence_index": 190,
+      "sample_purpose": "BIO to Label Studio offset smoke test"
+    },
+    "predictions": [
+      {
+        "model_version": "msra_bio_character_offset_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 2,
+              "text": "日本",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 10,
+              "text": "石川一成",
+              "labels": [
+                "PER"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 19,
+              "end": 24,
+              "text": "宝顶大佛湾",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 28,
+              "end": 30,
+              "text": "中华",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

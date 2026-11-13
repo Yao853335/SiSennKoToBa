@@ -1,0 +1,9 @@
+Current platform is win32, apply sqlite fix
+Add current directory to PATH for DLL search: D:\SiSennKoToBa
+Performing system checks...
+
+System check identified no issues (1 silenced).
+October 25, 2026 - 20:36:44
+Django version 3.2.14, using settings 'label_studio.core.settings.label_studio'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CTRL-BREAK.

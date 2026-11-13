@@ -1,0 +1,436 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20261018185126
+用户名: KAMI\31523
+RunAs 用户: KAMI\31523
+配置名称: 
+计算机: KAMI (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File D:\SiSennKoToBa\scripts\setup_environment.ps1
+进程 ID: 7848
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+已启动脚本，输出文件为 D:\SiSennKoToBa\logs\setup_environment.log
+[1/5] Creating project virtual environment with Python 3.8
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Requirement already satisfied: pip==24.0 in d:\sisennkotoba\.venv\lib\site-packages (24.0)
+Requirement already satisfied: setuptools<70 in d:\sisennkotoba\.venv\lib\site-packages (69.5.1)
+Requirement already satisfied: wheel in d:\sisennkotoba\.venv\lib\site-packages (0.45.1)
+[2/5] Installing PaddlePaddle 2.6.2 and PaddleNLP 2.6.1
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Requirement already satisfied: paddlepaddle==2.6.2 in d:\sisennkotoba\.venv\lib\site-packages (2.6.2)
+Requirement already satisfied: httpx in d:\sisennkotoba\.venv\lib\site-packages (from paddlepaddle==2.6.2) (0.28.1)
+Requirement already satisfied: numpy>=1.13 in d:\sisennkotoba\.venv\lib\site-packages (from paddlepaddle==2.6.2) (1.24.4
+)
+Requirement already satisfied: Pillow in d:\sisennkotoba\.venv\lib\site-packages (from paddlepaddle==2.6.2) (10.4.0)
+Requirement already satisfied: decorator in d:\sisennkotoba\.venv\lib\site-packages (from paddlepaddle==2.6.2) (5.3.1)
+Requirement already satisfied: astor in d:\sisennkotoba\.venv\lib\site-packages (from paddlepaddle==2.6.2) (0.8.1)
+Requirement already satisfied: opt-einsum==3.3.0 in d:\sisennkotoba\.venv\lib\site-packages (from paddlepaddle==2.6.2) (
+3.3.0)
+Requirement already satisfied: protobuf<=3.20.2,>=3.1.0 in d:\sisennkotoba\.venv\lib\site-packages (from paddlepaddle==2
+.6.2) (3.20.2)
+Requirement already satisfied: anyio in d:\sisennkotoba\.venv\lib\site-packages (from httpx->paddlepaddle==2.6.2) (4.5.2
+)
+Requirement already satisfied: certifi in d:\sisennkotoba\.venv\lib\site-packages (from httpx->paddlepaddle==2.6.2) (202
+6.7.22)
+Requirement already satisfied: httpcore==1.* in d:\sisennkotoba\.venv\lib\site-packages (from httpx->paddlepaddle==2.6.2
+) (1.0.9)
+Requirement already satisfied: idna in d:\sisennkotoba\.venv\lib\site-packages (from httpx->paddlepaddle==2.6.2) (3.15)
+Requirement already satisfied: h11>=0.16 in d:\sisennkotoba\.venv\lib\site-packages (from httpcore==1.*->httpx->paddlepa
+ddle==2.6.2) (0.16.0)
+Requirement already satisfied: sniffio>=1.1 in d:\sisennkotoba\.venv\lib\site-packages (from anyio->httpx->paddlepaddle=
+=2.6.2) (1.3.1)
+Requirement already satisfied: exceptiongroup>=1.0.2 in d:\sisennkotoba\.venv\lib\site-packages (from anyio->httpx->padd
+lepaddle==2.6.2) (1.3.1)
+Requirement already satisfied: typing-extensions>=4.1 in d:\sisennkotoba\.venv\lib\site-packages (from anyio->httpx->pad
+dlepaddle==2.6.2) (4.13.2)
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting paddlenlp==2.6.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/59/66/6e384f42fbc97e6e1ba3d356cc9541a26a6968a029c22e476d8294ab8
+e6c/paddlenlp-2.6.1-py3-none-any.whl (2.7 MB)
+     ---------------------------------------- 2.7/2.7 MB 3.6 MB/s eta 0:00:00
+Collecting jieba (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c6/cb/18eeb235f833b726522d7ebed54f2278ce28ba9438e3135ab0278d979
+2a2/jieba-0.42.1.tar.gz (19.2 MB)
+     ---------------------------------------- 19.2/19.2 MB 11.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting colorlog (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d4/19/0b6647bf5e331521e55d2b63bfbdc210bd9cd605189273f03614a05f7
+02d/colorlog-6.12.0-py3-none-any.whl (12 kB)
+Collecting colorama (from paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56
+c221/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting seqeval (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/9d/2d/233c79d5b4e5ab1dbf111242299153f3caddddbb691219f363ad55ce7
+83d/seqeval-1.2.2.tar.gz (43 kB)
+     ---------------------------------------- 43.6/43.6 kB 1.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting dill<0.3.5 (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b6/c3/973676ceb86b60835bb3978c6db67a5dc06be6cfdbd14ef0f5a13e3fc
+9fd/dill-0.3.4-py2.py3-none-any.whl (86 kB)
+     ---------------------------------------- 86.9/86.9 kB 4.8 MB/s eta 0:00:00
+Collecting multiprocess<=0.70.12.2 (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e6/22/b09b8394f8c86ff0cfebd725ea96bba0accd4a4b2be437bcba6a0cf7d
+1c3/multiprocess-0.70.12.2-py38-none-any.whl (128 kB)
+     ---------------------------------------- 128.3/128.3 kB 3.7 MB/s eta 0:00:00
+Collecting datasets>=2.0.0 (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ed/a5/33cf000137545a08b0a3a6ea76c8ccbd87917f78bb5d737f9f56f3b11
+ef6/datasets-3.1.0-py3-none-any.whl (480 kB)
+     ---------------------------------------- 480.6/480.6 kB 10.2 MB/s eta 0:00:00
+Collecting tqdm (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f
+83e/tqdm-4.70.1-py3-none-any.whl (80 kB)
+     ---------------------------------------- 80.2/80.2 kB 4.7 MB/s eta 0:00:00
+Collecting paddlefsl (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fb/4a/25d1959a8f1fe5ee400f32fc9fc8b56d4fd6fc25315e23c0171f6e705
+e2a/paddlefsl-1.1.0-py3-none-any.whl (101 kB)
+     ---------------------------------------- 101.0/101.0 kB 2.9 MB/s eta 0:00:00
+Collecting sentencepiece (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/48/c2/4efef1028e3834a43256a41c2e59f7fd4ee229a08fe2a30560f7160ef
+2ee/sentencepiece-0.2.0-cp38-cp38-win_amd64.whl (991 kB)
+     ---------------------------------------- 991.7/991.7 kB 15.6 MB/s eta 0:00:00
+Collecting huggingface-hub>=0.11.1 (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982
+787/huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+     ---------------------------------------- 566.4/566.4 kB 37.1 MB/s eta 0:00:00
+Collecting onnx>=1.10.0 (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2d/c8/5cc6f2c7b33547099506dcee04ab3c2dafc4f2f034d67fc158a7bc0a2
+474/onnx-1.17.0-cp38-cp38-win_amd64.whl (14.5 MB)
+     ---------------------------------------- 14.5/14.5 MB 10.4 MB/s eta 0:00:00
+Requirement already satisfied: protobuf==3.20.2 in d:\sisennkotoba\.venv\lib\site-packages (from paddlenlp==2.6.1) (3.20
+.2)
+Collecting paddle2onnx (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c0/ac/ea558b624c22d7044cc245d54b1fd0955b5da58ffd2ad7622e7923b36
+562/paddle2onnx-2.1.0-cp38-cp38-win_amd64.whl (2.0 MB)
+     ---------------------------------------- 2.0/2.0 MB 11.7 MB/s eta 0:00:00
+Collecting Flask-Babel (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/14/c2/e0ab5abe37882e118482884f2ec660cd06da644ddfbceccf5f88f546b
+574/flask_babel-4.0.0-py3-none-any.whl (9.6 kB)
+Collecting visualdl (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ea/b5/37726c750a4f4598660998327c3566b2d2ed5a1a5f44e9f0dde875602
+447/visualdl-2.5.3-py3-none-any.whl (6.3 MB)
+     ---------------------------------------- 6.3/6.3 MB 9.0 MB/s eta 0:00:00
+Collecting fastapi (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3e/57/aa70121b5008f44031be645a61a7c4abc24e0e888ad3fc8fda916f4d1
+88e/fastapi-0.124.4-py3-none-any.whl (113 kB)
+     ---------------------------------------- 113.3/113.3 kB 3.2 MB/s eta 0:00:00
+Collecting uvicorn (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/98/79/2e2620337ef1e4ef7a058b351603b765f59ac28e6e3ac7c5e7cdee9ea
+1ab/uvicorn-0.33.0-py3-none-any.whl (62 kB)
+     ---------------------------------------- 62.3/62.3 kB 1.7 MB/s eta 0:00:00
+Collecting typer (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c8/52/1f2df7e7d1be3d65ddc2936d820d4a3d9777a54f4204f5ca46b8513ef
+f77/typer-0.20.1-py3-none-any.whl (47 kB)
+     ---------------------------------------- 47.4/47.4 kB 2.5 MB/s eta 0:00:00
+Collecting rich (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b3/76/6d163cfac87b632216f71879e6b2cf17163f773ff59c00b5ff4900a80
+fa3/rich-14.3.4-py3-none-any.whl (310 kB)
+     ---------------------------------------- 310.5/310.5 kB 18.8 MB/s eta 0:00:00
+Collecting safetensors (from paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/69/e2/b011c38e5394c4c18fb5500778a55ec43ad6106126e74723ffaee246f
+56e/safetensors-0.5.3-cp38-abi3-win_amd64.whl (308 kB)
+     ---------------------------------------- 308.9/308.9 kB 18.7 MB/s eta 0:00:00
+Collecting filelock (from datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b9/f8/feced7779d755758a52d1f6635d990b8d98dc0a29fa568bbe0625f18f
+df3/filelock-3.16.1-py3-none-any.whl (16 kB)
+Requirement already satisfied: numpy>=1.17 in d:\sisennkotoba\.venv\lib\site-packages (from datasets>=2.0.0->paddlenlp==
+2.6.1) (1.24.4)
+Collecting pyarrow>=15.0.0 (from datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d1/db/42ac644453cfdfc60fe002b46d647fe7a6dfad753ef7b28e99b4c936a
+d5d/pyarrow-17.0.0-cp38-cp38-win_amd64.whl (25.2 MB)
+     ---------------------------------------- 25.2/25.2 MB 6.3 MB/s eta 0:00:00
+Collecting pandas (from datasets>=2.0.0->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/c3/6c/ea362eef61f05553aaf1a24b3e96b2d0603f5dc71a3bd35688a24ed8
+8843/pandas-2.0.3-cp38-cp38-win_amd64.whl (10.8 MB)
+Collecting requests>=2.32.2 (from datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7c/e4/56027c4a6b4ae70ca9de302488c5ca95ad4a39e190093d6c1a8ace083
+41b/requests-2.32.4-py3-none-any.whl (64 kB)
+     ---------------------------------------- 64.8/64.8 kB 3.6 MB/s eta 0:00:00
+Collecting xxhash (from datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1b/0c/95f1bd83530be4135c2de7ad6c05174bb1f88986f594be3b5b2959ddd
+a37/xxhash-3.8.2-cp38-cp38-win_amd64.whl (32 kB)
+Collecting fsspec<=2024.9.0,>=2023.1.0 (from fsspec[http]<=2024.9.0,>=2023.1.0->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1d/a0/6aaea0c2fbea2f89bfd5db25fb1e3481896a423002ebe4e55288907a9
+7a3/fsspec-2024.9.0-py3-none-any.whl (179 kB)
+     ---------------------------------------- 179.3/179.3 kB 5.5 MB/s eta 0:00:00
+Collecting aiohttp (from datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/21/0c/74c895688db09a2852056abf32d128991ec2fb41e5f57a1fe0928e151
+51c/aiohttp-3.10.11-cp38-cp38-win_amd64.whl (384 kB)
+     ---------------------------------------- 384.5/384.5 kB 8.0 MB/s eta 0:00:00
+Collecting packaging (from datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e9
+5ed/packaging-26.2-py3-none-any.whl (100 kB)
+     ---------------------------------------- 100.2/100.2 kB 6.0 MB/s eta 0:00:00
+Collecting pyyaml>=5.1 (from datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/76/b2/2b69cee94c9eb215216fc05778675c393e3aa541131dc910df8e52c83
+776/PyYAML-6.0.3-cp38-cp38-win_amd64.whl (160 kB)
+     ---------------------------------------- 160.1/160.1 kB 9.4 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions>=3.7.4.3 in d:\sisennkotoba\.venv\lib\site-packages (from huggingface-h
+ub>=0.11.1->paddlenlp==2.6.1) (4.13.2)
+Collecting starlette<0.51.0,>=0.40.0 (from fastapi->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b6/c5/7ae467eeddb57260c8ce17a3a09f9f5edba35820fc022d7c55b7decd5
+d3a/starlette-0.44.0-py3-none-any.whl (73 kB)
+     ---------------------------------------- 73.4/73.4 kB 2.0 MB/s eta 0:00:00
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f4/3c/8cc1cc84deffa6e25d2d0c688ebb80635dfdbf1dbea3e30c541c8cf4d
+860/pydantic-2.10.6-py3-none-any.whl (431 kB)
+     ---------------------------------------- 431.7/431.7 kB 13.6 MB/s eta 0:00:00
+Collecting annotated-doc>=0.0.2 (from fastapi->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1e/d3/26bf1008eb3d2daa8ef4cacc7f3bfdc11818d111f7e2d0201bc6e3b49
+d45/annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+Collecting Babel>=2.12 (from Flask-Babel->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/77/f5/21d2de20e8b8b0408f0681956ca2c69f1320a3848ac50e6e7f39c6159
+675/babel-2.18.0-py3-none-any.whl (10.2 MB)
+     ---------------------------------------- 10.2/10.2 MB 8.4 MB/s eta 0:00:00
+Collecting Flask>=2.0 (from Flask-Babel->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/61/80/ffe1da13ad9300f87c93af113edd0638c75138c42a0994becfacac078
+c06/flask-3.0.3-py3-none-any.whl (101 kB)
+     ---------------------------------------- 101.7/101.7 kB 5.7 MB/s eta 0:00:00
+Collecting Jinja2>=3.1 (from Flask-Babel->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13
+e56/jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ---------------------------------------- 134.9/134.9 kB 443.6 kB/s eta 0:00:00
+Collecting pytz>=2022.7 (from Flask-Babel->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4f/ef/c66110d46fb800dda0bf33164182dfadabe26a90e4476844d502a23dc
+a8e/pytz-2026.5-py2.py3-none-any.whl (506 kB)
+     ---------------------------------------- 506.3/506.3 kB 7.9 MB/s eta 0:00:00
+Collecting polygraphy>=0.49.20 (from paddle2onnx->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8b/16/a3069a489c36e855d3a792a532a96e6434e1a454a21248effd3a26da2
+a7b/polygraphy-0.53.6-py3-none-any.whl (485 kB)
+     ---------------------------------------- 485.4/485.4 kB 5.1 MB/s eta 0:00:00
+Collecting onnxoptimizer==0.3.13 (from paddle2onnx->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/04/09/486981928df4c1e91655c4137580379bc960fee245189daf18b606450
+c52/onnxoptimizer-0.3.13-cp38-cp38-win_amd64.whl (381 kB)
+     ---------------------------------------- 381.7/381.7 kB 11.6 MB/s eta 0:00:00
+Collecting markdown-it-py>=2.2.0 (from rich->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c1
+4f1f/markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86
+bdc/pygments-2.19.2-py3-none-any.whl (1.2 MB)
+     ---------------------------------------- 1.2/1.2 MB 25.9 MB/s eta 0:00:00
+Collecting scikit-learn>=0.21.3 (from seqeval->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/52/2d/ad6928a578c78bb0e44e34a5a922818b14c56716b81d145924f1f2914
+16f/scikit_learn-1.3.2-cp38-cp38-win_amd64.whl (9.3 MB)
+     ---------------------------------------- 9.3/9.3 MB 10.8 MB/s eta 0:00:00
+Collecting click>=8.0.0 (from typer->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7e/d4/7ebdbd03970677812aac39c869717059dbb71a4cfc033ca6e52217878
+92c/click-8.1.8-py3-none-any.whl (98 kB)
+     ---------------------------------------- 98.2/98.2 kB 5.5 MB/s eta 0:00:00
+Collecting shellingham>=1.3.0 (from typer->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7
+f822/shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Requirement already satisfied: h11>=0.8 in d:\sisennkotoba\.venv\lib\site-packages (from uvicorn->paddlenlp==2.6.1) (0.1
+6.0)
+Collecting bce-python-sdk (from visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ef/de/52b763b183e23f4dd73811a2dd2664824ae7fc6ceb1aa8dcd3f1102b1
+094/bce_python_sdk-0.9.79-py3-none-any.whl (440 kB)
+     ---------------------------------------- 440.3/440.3 kB 13.9 MB/s eta 0:00:00
+Requirement already satisfied: Pillow>=7.0.0 in d:\sisennkotoba\.venv\lib\site-packages (from visualdl->paddlenlp==2.6.1
+) (10.4.0)
+Collecting six>=1.14.0 (from visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2c
+c5e/six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting matplotlib (from visualdl->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/16/51/58b0b9de42fe1e665736d9286f88b5f1556a0e22bed8a71f46823176
+1083/matplotlib-3.7.5-cp38-cp38-win_amd64.whl (7.5 MB)
+Collecting rarfile (from visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/62/fc/ab37559419ca36dd8dd317c3a98395ed4dcee2beeb28bf6059b972906
+727/rarfile-4.2-py3-none-any.whl (29 kB)
+Collecting psutil (from visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b4/90/e2159492b5426be0c1fef7acba807a03511f97c5f86b3caeda6ad9235
+1a7/psutil-7.2.2-cp37-abi3-win_amd64.whl (137 kB)
+     ---------------------------------------- 137.7/137.7 kB 8.0 MB/s eta 0:00:00
+Collecting Werkzeug>=3.0.0 (from Flask>=2.0->Flask-Babel->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6c/69/05837f91dfe42109203ffa3e488214ff86a6d68b2ed6c167da6cdc423
+49b/werkzeug-3.0.6-py3-none-any.whl (227 kB)
+     ---------------------------------------- 228.0/228.0 kB 13.6 MB/s eta 0:00:00
+Collecting itsdangerous>=2.1.2 (from Flask>=2.0->Flask-Babel->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/04/96/92447566d16df59b2a776c0fb82dbc4d9e07cd95062562af01e40858
+3fc4/itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Collecting blinker>=1.6.2 (from Flask>=2.0->Flask-Babel->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/bb/2a/10164ed1f31196a2f7f3799368a821765c62851ead0e630ab52b8e14b
+4d0/blinker-1.8.2-py3-none-any.whl (9.5 kB)
+Collecting importlib-metadata>=3.6.0 (from Flask>=2.0->Flask-Babel->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a0/d9/a1e041c5e7caa9a05c925f4bdbdfb7f006d1f74996af53467bc394c97
+be7/importlib_metadata-8.5.0-py3-none-any.whl (26 kB)
+Collecting aiohappyeyeballs>=2.3.0 (from aiohttp->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b9/74/fbb6559de3607b3300b9be3cc64e97548d55678e44623db17820dbd20
+002/aiohappyeyeballs-2.4.4-py3-none-any.whl (14 kB)
+Collecting aiosignal>=1.1.2 (from aiohttp->datasets>=2.0.0->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/76/ac/a7305707cb852b7e16ff80eaf5692309bde30e2b1100a1fcacdc8f73
+1d97/aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting attrs>=17.3.0 (from aiohttp->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e4079
+41a/attrs-25.3.0-py3-none-any.whl (63 kB)
+     ---------------------------------------- 63.8/63.8 kB 3.3 MB/s eta 0:00:00
+Collecting frozenlist>=1.1.1 (from aiohttp->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/0c/90/85bb3547c327f5975078c1be018478d5e8d250a540c828f8f31a35d2a
+1bd/frozenlist-1.5.0-cp38-cp38-win_amd64.whl (51 kB)
+     ---------------------------------------- 51.9/51.9 kB 1.3 MB/s eta 0:00:00
+Collecting multidict<7.0,>=4.5 (from aiohttp->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/90/bf/3d0c1cc9c8163abc24625fae89c0ade1ede9bccb6eceb79edf8cff3cc
+a46/multidict-6.1.0-cp38-cp38-win_amd64.whl (28 kB)
+Collecting yarl<2.0,>=1.12.0 (from aiohttp->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/9c/9d/d944e897abf37f50f4fa2d8d6f5fd0ed9413bc8327d3b4cc25ba9694e
+1ba/yarl-1.15.2-cp38-cp38-win_amd64.whl (84 kB)
+     ---------------------------------------- 85.0/85.0 kB 4.7 MB/s eta 0:00:00
+Collecting async-timeout<6.0,>=4.0 (from aiohttp->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fe/ba/e2081de779ca30d473f21f5b30e0e737c438205440784c7dfc81efc2b
+029/async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.1->Flask-Babel->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/92/21/357205f03514a49b293e214ac39de01fadd0970a6e05e4bf1ddd0ffd
+0881/MarkupSafe-2.1.5-cp38-cp38-win_amd64.whl (17 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56
+a4b4/mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->paddlenlp
+==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e3
+4fb8/annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Collecting pydantic-core==2.27.2 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->paddlenlp=
+=2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/aa/6d/df49c17f024dfc58db0bacc7b03610058018dd2ea2eaf748ccbada4c3
+d06/pydantic_core-2.27.2-cp38-cp38-win_amd64.whl (2.0 MB)
+     ---------------------------------------- 2.0/2.0 MB 5.5 MB/s eta 0:00:00
+Collecting charset_normalizer<4,>=2 (from requests>=2.32.2->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/9d/8a/b618149cc5207943a0242068d7a27897f56a62947b5a039085f2a2202
+9f8/charset_normalizer-3.5.2-cp37-abi3-win_amd64.whl (200 kB)
+     ---------------------------------------- 200.1/200.1 kB 4.0 MB/s eta 0:00:00
+Requirement already satisfied: idna<4,>=2.5 in d:\sisennkotoba\.venv\lib\site-packages (from requests>=2.32.2->datasets>
+=2.0.0->paddlenlp==2.6.1) (3.15)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.32.2->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5
+ba8/urllib3-2.2.3-py3-none-any.whl (126 kB)
+     ---------------------------------------- 126.3/126.3 kB 7.7 MB/s eta 0:00:00
+Requirement already satisfied: certifi>=2017.4.17 in d:\sisennkotoba\.venv\lib\site-packages (from requests>=2.32.2->dat
+asets>=2.0.0->paddlenlp==2.6.1) (2026.7.22)
+Collecting scipy>=1.5.0 (from scikit-learn>=0.21.3->seqeval->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/32/8e/7f403535ddf826348c9b8417791e28712019962f7e90ff845896d6325
+d09/scipy-1.10.1-cp38-cp38-win_amd64.whl (42.2 MB)
+     ---------------------------------------- 42.2/42.2 MB 7.8 MB/s eta 0:00:00
+Collecting joblib>=1.1.1 (from scikit-learn>=0.21.3->seqeval->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2
+fb51/joblib-1.4.2-py3-none-any.whl (301 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn>=0.21.3->seqeval->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/4b/2c/ffbf7a134b9ab11a67b0cf0726453cedd9c5043a4fe7a35d1cefa9a1
+bcfb/threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Requirement already satisfied: anyio<5,>=3.4.0 in d:\sisennkotoba\.venv\lib\site-packages (from starlette<0.51.0,>=0.40.
+0->fastapi->paddlenlp==2.6.1) (4.5.2)
+Collecting pycryptodome>=3.8.0 (from bce-python-sdk->visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8c/b1/f4b32febb3a88f73744deb4b5c8187e5e5ed5a24fd4ee54d965ccbc56
+9cf/pycryptodome-3.24.1-cp37-abi3-win_amd64.whl (1.8 MB)
+     ---------------------------------------- 1.8/1.8 MB 10.5 MB/s eta 0:00:00
+Collecting future>=0.6.0 (from bce-python-sdk->visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6
+806/future-1.0.0-py3-none-any.whl (491 kB)
+     ---------------------------------------- 491.3/491.3 kB 10.2 MB/s eta 0:00:00
+Collecting crc32c>=2.2.post0 (from bce-python-sdk->visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f6/07/b5fabe88654f5eded3e4b6d84cde572dd0280a7362a6a5b698bbd77be
+5df/crc32c-2.9.post0.tar.gz (48 kB)
+     ---------------------------------------- 48.3/48.3 kB ? eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting contourpy>=1.0.1 (from matplotlib->visualdl->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/96/1b/b05cd42c8d21767a0488b883b38658fb9a45f86c293b7b42521a8113
+dc5d/contourpy-1.1.1-cp38-cp38-win_amd64.whl (477 kB)
+Collecting cycler>=0.10 (from matplotlib->visualdl->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245
+aae6/cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools>=4.22.0 (from matplotlib->visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/dc/7a/2b3666e8c13d035adf656a8ae391380656144760353c97f74747c64fd
+3e5/fonttools-4.57.0-cp38-cp38-win_amd64.whl (1.5 MB)
+     ---------------------------------------- 1.5/1.5 MB 4.1 MB/s eta 0:00:00
+Collecting kiwisolver>=1.0.1 (from matplotlib->visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/52/77/7e04cca2ff1dc6ee6b7654cebe233de72b7a3ec5616501b6f3144fb70
+740/kiwisolver-1.4.7-cp38-cp38-win_amd64.whl (55 kB)
+     ---------------------------------------- 55.8/55.8 kB 2.8 MB/s eta 0:00:00
+Collecting pyparsing>=2.3.1 (from matplotlib->visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e5/0c/0e3c05b1c87bb6a1c76d281b0f35e78d2d80ac91b5f8f524cebf77f51
+049/pyparsing-3.1.4-py3-none-any.whl (104 kB)
+     ---------------------------------------- 104.1/104.1 kB 2.0 MB/s eta 0:00:00
+Collecting python-dateutil>=2.7 (from matplotlib->visualdl->paddlenlp==2.6.1)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221
+264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Collecting importlib-resources>=3.2.0 (from matplotlib->visualdl->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e1/6a/4604f9ae2fa62ef47b9de2fa5ad599589d28c9fd1d335f32759813dfa
+91e/importlib_resources-6.4.5-py3-none-any.whl (36 kB)
+Collecting tzdata>=2022.1 (from pandas->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b
+718/tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+     ---------------------------------------- 348.0/348.0 kB 4.3 MB/s eta 0:00:00
+Requirement already satisfied: sniffio>=1.1 in d:\sisennkotoba\.venv\lib\site-packages (from anyio<5,>=3.4.0->starlette<
+0.51.0,>=0.40.0->fastapi->paddlenlp==2.6.1) (1.3.1)
+Requirement already satisfied: exceptiongroup>=1.0.2 in d:\sisennkotoba\.venv\lib\site-packages (from anyio<5,>=3.4.0->s
+tarlette<0.51.0,>=0.40.0->fastapi->paddlenlp==2.6.1) (1.3.1)
+Collecting zipp>=3.20 (from importlib-metadata>=3.6.0->Flask>=2.0->Flask-Babel->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/62/8b/5ba542fa83c90e09eac972fc9baca7a88e7e7ca4b221a892519540193
+08b/zipp-3.20.2-py3-none-any.whl (9.2 kB)
+Collecting propcache>=0.2.0 (from yarl<2.0,>=1.12.0->aiohttp->datasets>=2.0.0->paddlenlp==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/37/23/a30214b4c1f2bea24cc1197ef48d67824fbc41d5cf5472b17c37fef60
+02c/propcache-0.2.0-cp38-cp38-win_amd64.whl (45 kB)
+     ---------------------------------------- 45.7/45.7 kB 1.1 MB/s eta 0:00:00
+Building wheels for collected packages: jieba, seqeval, crc32c
+  Building wheel for jieba (setup.py) ... done
+  Created wheel for jieba: filename=jieba-0.42.1-py3-none-any.whl size=19314474 sha256=1ca5a994b7f0fd796444f04135ce766a4
+a43ed6ab8fb3acd6ed32d723d3b04ae
+  Stored in directory: c:\users\31523\appdata\local\pip\cache\wheels\f3\30\86\64b88bf0241f0132806c61b1e2686b44f1327bfc56
+42f9d77d
+  Building wheel for seqeval (setup.py) ... done
+  Created wheel for seqeval: filename=seqeval-1.2.2-py3-none-any.whl size=16185 sha256=085d1e9c3cc91616f3f24a8b04d696531
+c28d0441822ee2e839da452c20ef9e7
+  Stored in directory: c:\users\31523\appdata\local\pip\cache\wheels\8e\b0\e5\f5d2b20127a3d319539b103c4913248ee332288743
+8f1cc7fe
+  Building wheel for crc32c (pyproject.toml) ... done
+  Created wheel for crc32c: filename=crc32c-2.9.post0-cp38-cp38-win_amd64.whl size=66301 sha256=d9dc1ad137d5d7fc04bb8e53
+d1fe9f9637a812d79314d9a613558960ccb34399
+  Stored in directory: c:\users\31523\appdata\local\pip\cache\wheels\6b\72\71\6f5f1079fb5ee50ffb8c1a6b6de8b8078447321449
+25d505d8
+Successfully built jieba seqeval crc32c
+Installing collected packages: sentencepiece, pytz, jieba, zipp, xxhash, urllib3, tzdata, threadpoolctl, six, shellingha
+m, scipy, safetensors, rarfile, pyyaml, pyparsing, pygments, pydantic-core, pycryptodome, pyarrow, psutil, propcache, po
+lygraphy, packaging, onnx, multidict, mdurl, MarkupSafe, kiwisolver, joblib, itsdangerous, future, fsspec, frozenlist, f
+onttools, filelock, dill, cycler, crc32c, contourpy, colorama, charset_normalizer, blinker, Babel, attrs, async-timeout,
+ annotated-types, annotated-doc, aiohappyeyeballs, yarl, Werkzeug, tqdm, scikit-learn, requests, python-dateutil, pydant
+ic, onnxoptimizer, multiprocess, markdown-it-py, Jinja2, importlib-resources, importlib-metadata, colorlog, click, bce-p
+ython-sdk, aiosignal, uvicorn, starlette, seqeval, rich, pandas, paddlefsl, paddle2onnx, matplotlib, huggingface-hub, Fl
+ask, aiohttp, typer, Flask-Babel, fastapi, visualdl, datasets, paddlenlp
+Successfully installed Babel-2.18.0 Flask-3.0.3 Flask-Babel-4.0.0 Jinja2-3.1.6 MarkupSafe-2.1.5 Werkzeug-3.0.6 aiohappye
+yeballs-2.4.4 aiohttp-3.10.11 aiosignal-1.3.1 annotated-doc-0.0.4 annotated-types-0.7.0 async-timeout-5.0.1 attrs-25.3.0
+ bce-python-sdk-0.9.79 blinker-1.8.2 charset_normalizer-3.5.2 click-8.1.8 colorama-0.4.6 colorlog-6.12.0 contourpy-1.1.1
+ crc32c-2.9.post0 cycler-0.12.1 datasets-3.1.0 dill-0.3.4 fastapi-0.124.4 filelock-3.16.1 fonttools-4.57.0 frozenlist-1.
+5.0 fsspec-2024.9.0 future-1.0.0 huggingface-hub-0.36.2 importlib-metadata-8.5.0 importlib-resources-6.4.5 itsdangerous-
+2.2.0 jieba-0.42.1 joblib-1.4.2 kiwisolver-1.4.7 markdown-it-py-3.0.0 matplotlib-3.7.5 mdurl-0.1.2 multidict-6.1.0 multi
+process-0.70.12.2 onnx-1.17.0 onnxoptimizer-0.3.13 packaging-26.2 paddle2onnx-2.1.0 paddlefsl-1.1.0 paddlenlp-2.6.1 pand
+as-2.0.3 polygraphy-0.53.6 propcache-0.2.0 psutil-7.2.2 pyarrow-17.0.0 pycryptodome-3.24.1 pydantic-2.10.6 pydantic-core
+-2.27.2 pygments-2.19.2 pyparsing-3.1.4 python-dateutil-2.9.0.post0 pytz-2026.5 pyyaml-6.0.3 rarfile-4.2 requests-2.32.4
+ rich-14.3.4 safetensors-0.5.3 scikit-learn-1.3.2 scipy-1.10.1 sentencepiece-0.2.0 seqeval-1.2.2 shellingham-1.5.4 six-1
+.17.0 starlette-0.44.0 threadpoolctl-3.5.0 tqdm-4.70.1 typer-0.20.1 tzdata-2026.5 urllib3-2.2.3 uvicorn-0.33.0 visualdl-
+2.5.3 xxhash-3.8.2 yarl-1.15.2 zipp-3.20.2
+[3/5] Cloning reference repositories
+Cloning into 'D:\SiSennKoToBa\third_party\PaddleNLP'...
+remote: Enumerating objects: 5871, done.
+remote: Counting objects: 100% (5871/5871), done.
+remote: Compressing objects: 100% (4023/4023), done.
+remote: Total 5871 (delta 2309), reused 3198 (delta 1563), pack-reused 0 (from 0)
+Receiving objects: 100% (5871/5871), 23.15 MiB | 6.87 MiB/s, done.
+Resolving deltas: 100% (2309/2309), done.
+Note: checking out 'fd2bed541ff929f6f8b350001694e553b29d4e9a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+Checking out files: 100% (4950/4950), done.

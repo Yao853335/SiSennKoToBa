@@ -1,0 +1,31 @@
+批量推理文本数: 160
+D:\anaconda\envs\uie_cpu\lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[32m[2026-11-03 11:07:23,304] [    INFO][0m - We are using <class 'paddlenlp.transformers.ernie.tokenizer.ErnieTokenizer'> to load 'D:\SiSennKoToBa\week9-10\checkpoint\uie_jd_v2'.[0m
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:2478: FutureWarning: The `max_seq_len` argument is deprecated and will be removed in a future version, please use `max_length` instead.
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:1878: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  8/160  3.5s
+  16/160  8.0s
+  24/160  14.9s
+  32/160  20.0s
+  40/160  26.9s
+  48/160  30.5s
+  56/160  32.5s
+  64/160  36.9s
+  72/160  40.6s
+  80/160  43.7s
+  88/160  48.3s
+  96/160  52.6s
+  104/160  56.2s
+  112/160  60.6s
+  120/160  63.5s
+  128/160  66.1s
+  136/160  69.8s
+  144/160  72.4s
+  152/160  75.9s
+  160/160  80.8s
+完成，用时 80.8s -> D:\SiSennKoToBa\week11\logs\batch_results.jsonl

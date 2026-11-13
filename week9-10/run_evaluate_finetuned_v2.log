@@ -1,0 +1,139 @@
+test lines=360 unique texts=60
+D:\anaconda\envs\uie_cpu\lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[32m[2026-10-31 17:15:55,813] [    INFO][0m - Loading configuration file ./checkpoint/uie_jd_v2\config.json[0m
+[32m[2026-10-31 17:15:55,813] [    INFO][0m - Loading weights file ./checkpoint/uie_jd_v2\model_state.pdparams[0m
+[32m[2026-10-31 17:15:56,013] [    INFO][0m - Loaded weights file from disk, setting weights to model.[0m
+[32m[2026-10-31 17:16:03,194] [    INFO][0m - All model checkpoint weights were used when initializing UIE.
+[0m
+[32m[2026-10-31 17:16:03,194] [    INFO][0m - All the weights of UIE were initialized from the model checkpoint at ./checkpoint/uie_jd_v2.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use UIE for predictions without further training.[0m
+[32m[2026-10-31 17:16:03,219] [    INFO][0m - Converting to the inference model cost a little time.[0m
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddle\jit\dy2static\program_translator.py:712: UserWarning: full_graph=False don't support input_spec arguments. It will not produce any effect.
+You can set full_graph=True, then you can assign input spec.
+
+  warnings.warn(
+I1031 17:16:06.182750 31452 program_interpreter.cc:212] New Executor is Running.
+[32m[2026-10-31 17:16:06,768] [    INFO][0m - The inference model save in the path:./checkpoint/uie_jd_v2\static\inference[0m
+[32m[2026-10-31 17:16:08,255] [    INFO][0m - We are using <class 'paddlenlp.transformers.ernie.tokenizer.ErnieTokenizer'> to load './checkpoint/uie_jd_v2'.[0m
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:2478: FutureWarning: The `max_seq_len` argument is deprecated and will be removed in a future version, please use `max_length` instead.
+  warnings.warn(
+D:\anaconda\envs\uie_cpu\lib\site-packages\paddlenlp\transformers\tokenizer_utils_base.py:1878: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+taskflow progress=8/60
+taskflow progress=16/60
+taskflow progress=24/60
+taskflow progress=32/60
+taskflow progress=40/60
+taskflow progress=48/60
+taskflow progress=56/60
+taskflow progress=60/60
+{
+  "task": "week10_finetuned_evaluation_v2",
+  "model_path": "./checkpoint/uie_jd_v2",
+  "eval_schema": [
+    "专业技能",
+    "学历",
+    "经验年限",
+    "招聘职位",
+    "语言能力",
+    "知识领域"
+  ],
+  "label_map_to_v1": {
+    "专业技能": "技能",
+    "招聘职位": "岗位名称"
+  },
+  "test_path": "data_v2\\test.txt",
+  "test_lines": 360,
+  "unique_texts": 60,
+  "position_prob": 0.5,
+  "alignment_rule": "(start, end, label) 与 gold 完全一致才算 TP；与 evaluate.py SpanEvaluator 一致",
+  "inference_seconds": 45.292,
+  "fields": [
+    {
+      "support_gold": 124,
+      "predicted": 60,
+      "TP": 20,
+      "FP": 40,
+      "FN": 104,
+      "precision": 0.33333,
+      "recall": 0.16129,
+      "f1": 0.21739,
+      "label": "技能",
+      "schema_label": "专业技能"
+    },
+    {
+      "support_gold": 5,
+      "predicted": 5,
+      "TP": 5,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "label": "学历",
+      "schema_label": "学历"
+    },
+    {
+      "support_gold": 17,
+      "predicted": 13,
+      "TP": 12,
+      "FP": 1,
+      "FN": 5,
+      "precision": 0.92308,
+      "recall": 0.70588,
+      "f1": 0.8,
+      "label": "经验年限",
+      "schema_label": "经验年限"
+    },
+    {
+      "support_gold": 13,
+      "predicted": 9,
+      "TP": 2,
+      "FP": 7,
+      "FN": 11,
+      "precision": 0.22222,
+      "recall": 0.15385,
+      "f1": 0.18182,
+      "label": "岗位名称",
+      "schema_label": "招聘职位"
+    },
+    {
+      "support_gold": 4,
+      "predicted": 3,
+      "TP": 1,
+      "FP": 2,
+      "FN": 3,
+      "precision": 0.33333,
+      "recall": 0.25,
+      "f1": 0.28571,
+      "label": "语言能力",
+      "schema_label": "语言能力"
+    },
+    {
+      "support_gold": 85,
+      "predicted": 43,
+      "TP": 26,
+      "FP": 17,
+      "FN": 59,
+      "precision": 0.60465,
+      "recall": 0.30588,
+      "f1": 0.40625,
+      "label": "知识领域",
+      "schema_label": "知识领域"
+    }
+  ],
+  "overall_micro": {
+    "support_gold": 248,
+    "predicted": 133,
+    "TP": 66,
+    "FP": 67,
+    "FN": 182,
+    "precision": 0.49624,
+    "recall": 0.26613,
+    "f1": 0.34646
+  },
+  "macro_f1": 0.48186
+}
